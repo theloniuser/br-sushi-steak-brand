@@ -1,0 +1,48 @@
+{
+  "interiors": [
+    {
+      "id": "int-1",
+      "name": "Dining Room",
+      "description": "Primary dining space",
+      "imageUrl": "/assets/architectural-spatial-design/interiors/dining-room.jpg",
+      "category": "interiors"
+    },
+    {
+      "id": "int-2",
+      "name": "Bar Area",
+      "description": "Bar and lounge seating area",
+      "imageUrl": "/assets/architectural-spatial-design/interiors/bar-area.jpg",
+      "category": "interiors"
+    },
+    {
+      "id": "int-3",
+      "name": "Interior Detail",
+      "description": "Interior branding and design detail",
+      "imageUrl": "/assets/architectural-spatial-design/interiors/interior-detail.jpg",
+      "category": "interiors"
+    }
+  ],
+  "exteriors": [
+    {
+      "id": "ext-1",
+      "name": "Storefront",
+      "description": "Primary storefront and facade",
+      "imageUrl": "/assets/architectural-spatial-design/exteriors/storefront.jpg",
+      "category": "exteriors"
+    },
+    {
+      "id": "ext-2",
+      "name": "Exterior Signage",
+      "description": "Exterior signage and awning",
+      "imageUrl": "/assets/architectural-spatial-design/exteriors/exterior-signage.jpg",
+      "category": "exteriors"
+    },
+    {
+      "id": "ext-3",
+      "name": "Entrance",
+      "description": "Main entrance and entry experience",
+      "imageUrl": "/assets/architectural-spatial-design/exteriors/entrance.jpg",
+      "category": "exteriors"
+    }
+  ]
+}

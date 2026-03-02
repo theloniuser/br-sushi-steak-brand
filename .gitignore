@@ -1,0 +1,32 @@
+# OS files
+.DS_Store
+**/.DS_Store
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# IDE
+.idea/
+*.swp
+*.swo
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# Auto Claude data directory
+.auto-claude/
+
+# Asset backup and staging folders
+public/assets/**/unused/
+public/assets/**/removed/
+public/assets/**/to-add/
+*_original.*

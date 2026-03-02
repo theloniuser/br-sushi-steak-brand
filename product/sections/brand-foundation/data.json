@@ -1,0 +1,257 @@
+{
+  "_meta": {
+    "models": {
+      "colors": "Brand colors with complete specifications including Pantone, RGB, CMYK, and HEX values.",
+      "typographyStyles": "Typography system showing font families, weights, sizes, and spacing for different text styles.",
+      "logoAssets": "Logo files available for download in multiple formats.",
+      "fontFiles": "Downloadable font files in various weights and styles.",
+      "brandGuidelines": "Visual guidelines showing correct and incorrect usage of brand elements."
+    }
+  },
+  "colors": [
+    {
+      "id": "color-1",
+      "name": "Primary Color",
+      "description": "Primary brand color for logos, accents, and signature elements",
+      "pantone": "PMS XXXX",
+      "rgb": { "r": 0, "g": 0, "b": 0 },
+      "cmyk": { "c": 0, "m": 0, "y": 0, "k": 100 },
+      "hex": "#000000",
+      "usage": "Use for primary branding elements, signage accents, and key messaging"
+    },
+    {
+      "id": "color-2",
+      "name": "Secondary Color",
+      "description": "Secondary brand color for accents and highlights",
+      "pantone": "PMS XXXX",
+      "rgb": { "r": 128, "g": 128, "b": 128 },
+      "cmyk": { "c": 0, "m": 0, "y": 0, "k": 50 },
+      "hex": "#808080",
+      "usage": "Use for accent elements, highlights, and secondary messaging"
+    },
+    {
+      "id": "color-3",
+      "name": "Neutral / Background",
+      "description": "Neutral color for backgrounds and large areas",
+      "pantone": "PMS XXXX",
+      "rgb": { "r": 255, "g": 255, "b": 255 },
+      "cmyk": { "c": 0, "m": 0, "y": 0, "k": 0 },
+      "hex": "#ffffff",
+      "usage": "Use for backgrounds, white space, and light surfaces"
+    }
+  ],
+  "typographyStyles": [
+    {
+      "id": "type-1",
+      "styleName": "Display Heading",
+      "fontFamily": "Brand Display Font",
+      "fontWeight": "Regular",
+      "fontSize": "64px",
+      "lineHeight": "72px",
+      "letterSpacing": "2px",
+      "example": "BRAND DISPLAY HEADING",
+      "usage": "Large headlines, hero sections, storefront signage"
+    },
+    {
+      "id": "type-2",
+      "styleName": "Page Heading",
+      "fontFamily": "Brand Display Font",
+      "fontWeight": "Regular",
+      "fontSize": "48px",
+      "lineHeight": "56px",
+      "letterSpacing": "1.5px",
+      "example": "Page Heading Style",
+      "usage": "Page titles, section headers, major categories"
+    },
+    {
+      "id": "type-3",
+      "styleName": "Section Heading",
+      "fontFamily": "Brand Body Font",
+      "fontWeight": "Bold",
+      "fontSize": "32px",
+      "lineHeight": "40px",
+      "letterSpacing": "1px",
+      "example": "Section Heading Style",
+      "usage": "Section titles, card headers, subsections"
+    },
+    {
+      "id": "type-4",
+      "styleName": "Subheading",
+      "fontFamily": "Brand Body Font",
+      "fontWeight": "SemiBold",
+      "fontSize": "20px",
+      "lineHeight": "28px",
+      "letterSpacing": "0.5px",
+      "example": "Subheading and Callout Text",
+      "usage": "Subheadings, callouts, emphasis text"
+    },
+    {
+      "id": "type-5",
+      "styleName": "Body Text",
+      "fontFamily": "Brand Body Font",
+      "fontWeight": "Regular",
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "letterSpacing": "0px",
+      "example": "This is an example of body text for extended reading.",
+      "usage": "Body copy, paragraphs, descriptions"
+    },
+    {
+      "id": "type-6",
+      "styleName": "Small Text",
+      "fontFamily": "Brand Body Font",
+      "fontWeight": "Regular",
+      "fontSize": "14px",
+      "lineHeight": "20px",
+      "letterSpacing": "0px",
+      "example": "Small text for captions and fine print.",
+      "usage": "Captions, metadata, disclaimers, fine print"
+    },
+    {
+      "id": "type-7",
+      "styleName": "Button / UI Text",
+      "fontFamily": "Brand UI Font",
+      "fontWeight": "Medium",
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "letterSpacing": "0.5px",
+      "example": "CALL TO ACTION",
+      "usage": "Buttons, calls-to-action, navigation items"
+    }
+  ],
+  "logoAssets": [
+    {
+      "id": "logo-1",
+      "name": "Primary Logo (Full Color)",
+      "description": "Primary brand logo in full color",
+      "category": "primary",
+      "usageGuidelines": "Use on white or light backgrounds. Minimum width: 150px.",
+      "files": [
+        { "format": "SVG", "size": "— KB", "downloadUrl": "/assets/logos/primary-logo.svg" },
+        { "format": "PNG", "size": "— KB", "downloadUrl": "/assets/logos/primary-logo@3x.png" }
+      ]
+    },
+    {
+      "id": "logo-2",
+      "name": "Primary Logo (Black)",
+      "description": "Primary brand logo in black for single-color applications",
+      "category": "monochrome",
+      "usageGuidelines": "Use when color reproduction is not available. Minimum width: 150px.",
+      "files": [
+        { "format": "SVG", "size": "— KB", "downloadUrl": "/assets/logos/primary-logo-black.svg" },
+        { "format": "PNG", "size": "— KB", "downloadUrl": "/assets/logos/primary-logo-black@3x.png" }
+      ]
+    },
+    {
+      "id": "logo-3",
+      "name": "Primary Logo (White)",
+      "description": "White version for dark backgrounds",
+      "category": "monochrome",
+      "usageGuidelines": "Use on dark backgrounds or photography. Minimum width: 150px.",
+      "files": [
+        { "format": "SVG", "size": "— KB", "downloadUrl": "/assets/logos/primary-logo-white.svg" },
+        { "format": "PNG", "size": "— KB", "downloadUrl": "/assets/logos/primary-logo-white@3x.png" }
+      ]
+    },
+    {
+      "id": "logo-4",
+      "name": "Icon / Mark",
+      "description": "Brand icon or logomark for compact applications",
+      "category": "icon",
+      "usageGuidelines": "Use for app icons, social media avatars, favicon. Minimum size: 32px.",
+      "files": [
+        { "format": "SVG", "size": "— KB", "downloadUrl": "/assets/logos/brand-icon.svg" },
+        { "format": "PNG", "size": "— KB", "downloadUrl": "/assets/logos/brand-icon@3x.png" }
+      ]
+    }
+  ],
+  "fontFiles": [
+    {
+      "id": "font-1",
+      "fontFamily": "Brand Display Font",
+      "weight": "Regular",
+      "style": "Normal",
+      "format": "TTF",
+      "fileName": "BrandDisplayFont-Regular.ttf",
+      "fileSize": "— KB",
+      "downloadUrl": "/assets/fonts/BrandDisplayFont-Regular.ttf"
+    },
+    {
+      "id": "font-2",
+      "fontFamily": "Brand Body Font",
+      "weight": "Regular",
+      "style": "Normal",
+      "format": "OTF",
+      "fileName": "BrandBodyFont-Regular.otf",
+      "fileSize": "— KB",
+      "downloadUrl": "/assets/fonts/BrandBodyFont-Regular.otf"
+    },
+    {
+      "id": "font-3",
+      "fontFamily": "Brand Body Font",
+      "weight": "Bold",
+      "style": "Normal",
+      "format": "OTF",
+      "fileName": "BrandBodyFont-Bold.otf",
+      "fileSize": "— KB",
+      "downloadUrl": "/assets/fonts/BrandBodyFont-Bold.otf"
+    },
+    {
+      "id": "font-4",
+      "fontFamily": "Brand UI Font",
+      "weight": "Medium",
+      "style": "Normal",
+      "format": "TTF",
+      "fileName": "BrandUIFont-Medium.ttf",
+      "fileSize": "— KB",
+      "downloadUrl": "/assets/fonts/BrandUIFont-Medium.ttf"
+    }
+  ],
+  "brandGuidelines": [
+    {
+      "id": "guide-1",
+      "title": "Logo Clear Space",
+      "category": "logo-usage",
+      "rule": "Always maintain adequate clear space around the logo. Nothing should intrude within this protected zone.",
+      "doExample": "Logo with adequate breathing room on all sides, nothing within the clearspace zone.",
+      "dontExample": "Logo crowded by text, borders, or other design elements within the clearspace.",
+      "exampleImageUrl": "/assets/guidelines/logo-clearspace.png"
+    },
+    {
+      "id": "guide-2",
+      "title": "Logo on Photography",
+      "category": "logo-usage",
+      "rule": "When placing the logo on photography, ensure sufficient contrast. Use white or black version depending on the background.",
+      "doExample": "White logo on dark photography with clear visibility and contrast.",
+      "dontExample": "Color logo on busy, mid-tone photography where it becomes hard to read.",
+      "exampleImageUrl": "/assets/guidelines/logo-on-photo.png"
+    },
+    {
+      "id": "guide-3",
+      "title": "Color Application",
+      "category": "color",
+      "rule": "Use brand colors consistently and purposefully. Primary color should dominate; secondary colors should accent.",
+      "doExample": "Primary color used for main brand elements, secondary as accents on appropriate backgrounds.",
+      "dontExample": "Random color mixing or using off-brand colors that dilute the brand identity.",
+      "exampleImageUrl": "/assets/guidelines/color-usage.png"
+    },
+    {
+      "id": "guide-4",
+      "title": "Typography Pairing",
+      "category": "typography",
+      "rule": "Always pair the display font for headings with the body font for paragraphs. Never use the display font for extended body copy.",
+      "doExample": "Display font headline with body font paragraph text below.",
+      "dontExample": "Display font used for body copy or long-form content.",
+      "exampleImageUrl": "/assets/guidelines/typography-pairing.png"
+    },
+    {
+      "id": "guide-5",
+      "title": "Logo Modifications",
+      "category": "logo-usage",
+      "rule": "Never modify the logo by stretching, rotating, adding effects, or changing colors outside approved variations.",
+      "doExample": "Logo used in approved color variations at correct proportions.",
+      "dontExample": "Logo stretched, outlined, shadowed, tilted, or recolored in unapproved ways.",
+      "exampleImageUrl": "/assets/guidelines/logo-dont-modify.png"
+    }
+  ]
+}

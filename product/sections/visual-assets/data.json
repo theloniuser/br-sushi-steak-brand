@@ -1,0 +1,15 @@
+{
+  "_meta": { "models": { "textures": "Surface textures and patterns.", "icons": "Brand icon set.", "decorativeElements": "Borders, ornaments, and badges." } },
+  "textures": [
+    { "id": "texture-1", "name": "Primary Texture", "description": "Main brand texture for backgrounds and surfaces", "previewUrl": "/assets/visual-assets/textures/primary-texture.jpg", "files": [ { "format": "JPG", "size": "— KB", "downloadUrl": "/assets/visual-assets/textures/primary-texture.jpg" } ] },
+    { "id": "texture-2", "name": "Secondary Texture", "description": "Secondary texture for accent areas", "previewUrl": "/assets/visual-assets/textures/secondary-texture.jpg", "files": [ { "format": "JPG", "size": "— KB", "downloadUrl": "/assets/visual-assets/textures/secondary-texture.jpg" } ] }
+  ],
+  "icons": [
+    { "id": "icon-1", "name": "Icon Placeholder 1", "description": "Brand icon for [use case]", "previewUrl": "/assets/visual-assets/icons/icon-1.svg", "files": [ { "format": "SVG", "size": "— KB", "downloadUrl": "/assets/visual-assets/icons/icon-1.svg" } ] },
+    { "id": "icon-2", "name": "Icon Placeholder 2", "description": "Brand icon for [use case]", "previewUrl": "/assets/visual-assets/icons/icon-2.svg", "files": [ { "format": "SVG", "size": "— KB", "downloadUrl": "/assets/visual-assets/icons/icon-2.svg" } ] }
+  ],
+  "decorativeElements": [
+    { "id": "deco-1", "name": "Decorative Border", "description": "Brand border element for framing content", "previewUrl": "/assets/visual-assets/decorative/border.svg", "usageGuidelines": "Use to frame content areas or separate sections.", "files": [ { "format": "SVG", "size": "— KB", "downloadUrl": "/assets/visual-assets/decorative/border.svg" } ] },
+    { "id": "deco-2", "name": "Ornamental Element", "description": "Decorative ornament for adding brand personality", "previewUrl": "/assets/visual-assets/decorative/ornament.svg", "usageGuidelines": "Use sparingly to add visual interest.", "files": [ { "format": "SVG", "size": "— KB", "downloadUrl": "/assets/visual-assets/decorative/ornament.svg" } ] }
+  ]
+}

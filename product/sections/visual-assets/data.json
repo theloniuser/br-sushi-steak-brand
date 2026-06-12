@@ -1,15 +1,195 @@
 {
-  "_meta": { "models": { "textures": "Surface textures and patterns.", "icons": "Brand icon set.", "decorativeElements": "Borders, ornaments, and badges." } },
-  "textures": [
-    { "id": "texture-1", "name": "Primary Texture", "description": "Main brand texture for backgrounds and surfaces", "previewUrl": "/assets/visual-assets/textures/primary-texture.jpg", "files": [ { "format": "JPG", "size": "— KB", "downloadUrl": "/assets/visual-assets/textures/primary-texture.jpg" } ] },
-    { "id": "texture-2", "name": "Secondary Texture", "description": "Secondary texture for accent areas", "previewUrl": "/assets/visual-assets/textures/secondary-texture.jpg", "files": [ { "format": "JPG", "size": "— KB", "downloadUrl": "/assets/visual-assets/textures/secondary-texture.jpg" } ] }
+  "_meta": {
+    "models": {
+      "decorativeElements": "Brand decorative graphics — frames, crescents, wave motifs — for use as layout accents and background elements.",
+      "icons": "Brand symbol set for use in menus, signage, and digital applications.",
+      "graphics": "Brand graphic elements including cultural motifs, illustrated lockups, and collateral mockups."
+    }
+  },
+  "decorativeElements": [
+    {
+      "id": "deco-1",
+      "name": "Crescent",
+      "description": "Crescent graphic motif for use as a brand accent and compositional element",
+      "previewUrl": "/assets/visual-assets/Crescent.jpg",
+      "usageGuidelines": "Use to accent layout areas or as a supporting visual element. Do not overlap with primary logo.",
+      "files": [
+        { "format": "SVG", "size": "—", "downloadUrl": "/assets/visual-assets/Crescent.svg" },
+        { "format": "PNG", "size": "—", "downloadUrl": "/assets/visual-assets/Crescent.png" },
+        { "format": "JPG", "size": "—", "downloadUrl": "/assets/visual-assets/Crescent.jpg" }
+      ]
+    },
+    {
+      "id": "deco-2",
+      "name": "Frame",
+      "description": "Decorative brand frame for containing photography, text, or key compositions",
+      "previewUrl": "/assets/visual-assets/Frame.jpg",
+      "usageGuidelines": "Use to frame featured photography or callout content. Maintain proportions — do not stretch.",
+      "files": [
+        { "format": "SVG", "size": "—", "downloadUrl": "/assets/visual-assets/Frame.svg" },
+        { "format": "PNG", "size": "—", "downloadUrl": "/assets/visual-assets/Frame.png" },
+        { "format": "JPG", "size": "—", "downloadUrl": "/assets/visual-assets/Frame.jpg" }
+      ]
+    }
   ],
   "icons": [
-    { "id": "icon-1", "name": "Icon Placeholder 1", "description": "Brand icon for [use case]", "previewUrl": "/assets/visual-assets/icons/icon-1.svg", "files": [ { "format": "SVG", "size": "— KB", "downloadUrl": "/assets/visual-assets/icons/icon-1.svg" } ] },
-    { "id": "icon-2", "name": "Icon Placeholder 2", "description": "Brand icon for [use case]", "previewUrl": "/assets/visual-assets/icons/icon-2.svg", "files": [ { "format": "SVG", "size": "— KB", "downloadUrl": "/assets/visual-assets/icons/icon-2.svg" } ] }
+    {
+      "id": "icon-1",
+      "name": "Symbol 1",
+      "description": "Brand symbol mark 1",
+      "previewUrl": "/assets/visual-assets/Icons/Symbol1.jpg",
+      "files": [
+        { "format": "SVG", "size": "—", "downloadUrl": "/assets/visual-assets/Icons/Symbol1.svg" },
+        { "format": "PNG", "size": "—", "downloadUrl": "/assets/visual-assets/Icons/Symbol1.png" }
+      ]
+    },
+    {
+      "id": "icon-2",
+      "name": "Symbol 2",
+      "description": "Brand symbol mark 2",
+      "previewUrl": "/assets/visual-assets/Icons/Symbol2.jpg",
+      "files": [
+        { "format": "SVG", "size": "—", "downloadUrl": "/assets/visual-assets/Icons/Symbol2.svg" },
+        { "format": "PNG", "size": "—", "downloadUrl": "/assets/visual-assets/Icons/Symbol2.png" }
+      ]
+    },
+    {
+      "id": "icon-3",
+      "name": "Symbol 3",
+      "description": "Brand symbol mark 3",
+      "previewUrl": "/assets/visual-assets/Icons/Symbol3.jpg",
+      "files": [
+        { "format": "SVG", "size": "—", "downloadUrl": "/assets/visual-assets/Icons/Symbol3.svg" },
+        { "format": "PNG", "size": "—", "downloadUrl": "/assets/visual-assets/Icons/Symbol3.png" }
+      ]
+    },
+    {
+      "id": "icon-4",
+      "name": "Symbol 4",
+      "description": "Brand symbol mark 4",
+      "previewUrl": "/assets/visual-assets/Icons/Symbol4.jpg",
+      "files": [
+        { "format": "SVG", "size": "—", "downloadUrl": "/assets/visual-assets/Icons/Symbol4.svg" },
+        { "format": "PNG", "size": "—", "downloadUrl": "/assets/visual-assets/Icons/Symbol4.png" }
+      ]
+    },
+    {
+      "id": "icon-5",
+      "name": "Symbol 5",
+      "description": "Brand symbol mark 5",
+      "previewUrl": "/assets/visual-assets/Icons/Symbol5.jpg",
+      "files": [
+        { "format": "SVG", "size": "—", "downloadUrl": "/assets/visual-assets/Icons/Symbol5.svg" },
+        { "format": "PNG", "size": "—", "downloadUrl": "/assets/visual-assets/Icons/Symbol5.png" }
+      ]
+    },
+    {
+      "id": "icon-6",
+      "name": "Symbol 6",
+      "description": "Brand symbol mark 6",
+      "previewUrl": "/assets/visual-assets/Icons/Symbol6.jpg",
+      "files": [
+        { "format": "SVG", "size": "—", "downloadUrl": "/assets/visual-assets/Icons/Symbol6.svg" },
+        { "format": "PNG", "size": "—", "downloadUrl": "/assets/visual-assets/Icons/Symbol6.png" }
+      ]
+    }
   ],
-  "decorativeElements": [
-    { "id": "deco-1", "name": "Decorative Border", "description": "Brand border element for framing content", "previewUrl": "/assets/visual-assets/decorative/border.svg", "usageGuidelines": "Use to frame content areas or separate sections.", "files": [ { "format": "SVG", "size": "— KB", "downloadUrl": "/assets/visual-assets/decorative/border.svg" } ] },
-    { "id": "deco-2", "name": "Ornamental Element", "description": "Decorative ornament for adding brand personality", "previewUrl": "/assets/visual-assets/decorative/ornament.svg", "usageGuidelines": "Use sparingly to add visual interest.", "files": [ { "format": "SVG", "size": "— KB", "downloadUrl": "/assets/visual-assets/decorative/ornament.svg" } ] }
+  "graphics": [
+    {
+      "id": "graphic-1",
+      "name": "Mountain",
+      "description": "Mountain illustration — brand graphic for use in full-color applications",
+      "previewUrl": "/assets/visual-assets/misc-graphics/Mountain.jpg",
+      "usageGuidelines": "Use as a full-color brand illustration in marketing and environmental applications.",
+      "files": [
+        { "format": "SVG", "size": "—", "downloadUrl": "/assets/visual-assets/misc-graphics/Mountain.svg" },
+        { "format": "PNG", "size": "—", "downloadUrl": "/assets/visual-assets/misc-graphics/Mountain.png" },
+        { "format": "JPG", "size": "—", "downloadUrl": "/assets/visual-assets/misc-graphics/Mountain.jpg" }
+      ]
+    },
+    {
+      "id": "graphic-2",
+      "name": "Mountain — Black",
+      "description": "Mountain illustration in black for single-color or reversed applications",
+      "previewUrl": "/assets/visual-assets/misc-graphics/Mountain-BK.jpg",
+      "usageGuidelines": "Use on light backgrounds when single-color print or embossing is required.",
+      "files": [
+        { "format": "SVG", "size": "—", "downloadUrl": "/assets/visual-assets/misc-graphics/Mountain-BK.svg" },
+        { "format": "PNG", "size": "—", "downloadUrl": "/assets/visual-assets/misc-graphics/Mountain-BK.png" },
+        { "format": "JPG", "size": "—", "downloadUrl": "/assets/visual-assets/misc-graphics/Mountain-BK.jpg" }
+      ]
+    },
+    {
+      "id": "graphic-3",
+      "name": "Mountain Logo — Black",
+      "description": "Mountain graphic combined with logo lockup in black",
+      "previewUrl": "/assets/visual-assets/misc-graphics/Mountain-Logo-Black.jpg",
+      "usageGuidelines": "Use for premium collateral where the mountain illustration reinforces the brand mark.",
+      "files": [
+        { "format": "SVG", "size": "—", "downloadUrl": "/assets/visual-assets/misc-graphics/Mountain-Logo-Black.svg" },
+        { "format": "PNG", "size": "—", "downloadUrl": "/assets/visual-assets/misc-graphics/Mountain-Logo-Black.png" },
+        { "format": "JPG", "size": "—", "downloadUrl": "/assets/visual-assets/misc-graphics/Mountain-Logo-Black.jpg" }
+      ]
+    },
+    {
+      "id": "graphic-4",
+      "name": "Waves",
+      "description": "Wave motif graphic for decorative and background use",
+      "previewUrl": "/assets/visual-assets/misc-graphics/Waves.jpg",
+      "usageGuidelines": "Use as a background texture or compositional element. Keep at reduced opacity when used behind text.",
+      "files": [
+        { "format": "SVG", "size": "—", "downloadUrl": "/assets/visual-assets/misc-graphics/Waves.svg" },
+        { "format": "PNG", "size": "—", "downloadUrl": "/assets/visual-assets/misc-graphics/Waves.png" },
+        { "format": "JPG", "size": "—", "downloadUrl": "/assets/visual-assets/misc-graphics/Waves.jpg" }
+      ]
+    },
+    {
+      "id": "graphic-5",
+      "name": "Kanji Story",
+      "description": "Kanji typographic illustration communicating the brand's Japanese heritage",
+      "previewUrl": "/assets/visual-assets/misc-graphics/Kanji-Story.jpg",
+      "usageGuidelines": "Use in editorial, environmental, and cultural storytelling contexts. Do not crop or alter the kanji characters.",
+      "files": [
+        { "format": "SVG", "size": "—", "downloadUrl": "/assets/visual-assets/misc-graphics/Kanji-Story.svg" },
+        { "format": "PNG", "size": "—", "downloadUrl": "/assets/visual-assets/misc-graphics/Kanji-Story.png" },
+        { "format": "JPG", "size": "—", "downloadUrl": "/assets/visual-assets/misc-graphics/Kanji-Story.jpg" }
+      ]
+    },
+    {
+      "id": "graphic-6",
+      "name": "Business Card — Front",
+      "description": "Standard business card front design",
+      "previewUrl": "/assets/visual-assets/misc-graphics/SushiSteak-BusinessCard-front.jpg",
+      "usageGuidelines": "Reference template for business card production. Use approved vendor and stock.",
+      "files": [
+        { "format": "SVG", "size": "—", "downloadUrl": "/assets/visual-assets/misc-graphics/SushiSteak-BusinessCard-front.svg" },
+        { "format": "PNG", "size": "—", "downloadUrl": "/assets/visual-assets/misc-graphics/SushiSteak-BusinessCard-front.png" },
+        { "format": "JPG", "size": "—", "downloadUrl": "/assets/visual-assets/misc-graphics/SushiSteak-BusinessCard-front.jpg" }
+      ]
+    },
+    {
+      "id": "graphic-7",
+      "name": "Business Card — Back",
+      "description": "Standard business card back design",
+      "previewUrl": "/assets/visual-assets/misc-graphics/SushiSteak-BusinessCard-back.jpg",
+      "usageGuidelines": "Reference template for business card production. Use approved vendor and stock.",
+      "files": [
+        { "format": "SVG", "size": "—", "downloadUrl": "/assets/visual-assets/misc-graphics/SushiSteak-BusinessCard-back.svg" },
+        { "format": "PNG", "size": "—", "downloadUrl": "/assets/visual-assets/misc-graphics/SushiSteak-BusinessCard-back.png" },
+        { "format": "JPG", "size": "—", "downloadUrl": "/assets/visual-assets/misc-graphics/SushiSteak-BusinessCard-back.jpg" }
+      ]
+    },
+    {
+      "id": "graphic-8",
+      "name": "Business Card — Jonathan S. (Back)",
+      "description": "Personalized business card back for Jonathan S.",
+      "previewUrl": "/assets/visual-assets/misc-graphics/SushiSteak-BusinessCard-JonathanS-back.jpg",
+      "usageGuidelines": "Staff-specific business card. Do not use as generic template.",
+      "files": [
+        { "format": "SVG", "size": "—", "downloadUrl": "/assets/visual-assets/misc-graphics/SushiSteak-BusinessCard-JonathanS-back.svg" },
+        { "format": "PNG", "size": "—", "downloadUrl": "/assets/visual-assets/misc-graphics/SushiSteak-BusinessCard-JonathanS-back.png" },
+        { "format": "JPG", "size": "—", "downloadUrl": "/assets/visual-assets/misc-graphics/SushiSteak-BusinessCard-JonathanS-back.jpg" }
+      ]
+    }
   ]
 }

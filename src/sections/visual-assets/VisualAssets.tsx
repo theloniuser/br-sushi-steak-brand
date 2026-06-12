@@ -5,7 +5,7 @@ export default function VisualAssetsPreview() {
  const handleAssetDownload = (assetId: string, format: string) => {
    // Search all asset arrays for the item
    const allAssets = [
-     ...data.textures,
+     ...data.graphics,
      ...data.icons,
      ...data.decorativeElements
    ]
@@ -26,7 +26,7 @@ export default function VisualAssetsPreview() {
 
  return (
  <VisualAssetsComponent
- textures={data.textures}
+ graphics={data.graphics}
  icons={data.icons}
  decorativeElements={data.decorativeElements}
  onAssetDownload={handleAssetDownload}

@@ -1,32 +1,39 @@
 # Application Shell Specification
 
 ## Overview
-The [Brand] Brand Guidelines uses a clean, presentation-focused top navigation layout. The shell emphasizes the brand while providing clear access to all four sections of the brand guidelines.
+The BR Sushi & Steak Brand Guidelines site uses a fixed top navigation with a black header. The shell emphasizes the premium, dark brand aesthetic while providing clear access to all five sections.
 
 ## Navigation Structure
-- **Brand Foundation** → Section 1
-- **Visual Assets** → Section 2
-- **Architectural & Spatial Design** → Section 3
-- **Menus & Signage** → Section 4
+- **Brand Foundation** → `/sections/brand-foundation`
+- **Visual Assets** → `/sections/visual-assets`
+- **Architectural & Spatial Design** → `/sections/architectural-and-spatial-design`
+- **Menus** → `/sections/menus`
+- **Signage** → `/sections/signage`
 
 ## Header
-- **Location:** Top of page, fixed/sticky on scroll
-- **Contents:**
-  - [Brand] logo (left side)
-  - Horizontal navigation items (center-right)
-- **No user menu:** This is a presentation interface without login/logout features
+- **Background:** Black (`#000000`)
+- **Height:** 144px (h-36), logo at 128px (h-32)
+- **Logo:** `BR-Sushi-Steak_Primary-White.svg` (white variant for dark background)
+- **Logo position:** Left
+- **Nav position:** Right
+- **Bottom border:** `border-white/10` (subtle white at 10% opacity)
+
+## Navigation Style
+- **Inactive:** `text-white/60` — muted white text, uppercase, tracked
+- **Hover:** `text-white` — full white
+- **Active:** `text-[#AD936D]` — brand gold
+- **Font:** Boston SemiBold, small, tracked, uppercase
+- **No button backgrounds** — text-only link treatment
 
 ## Layout Pattern
-Top navigation with fixed header and scrollable content area below. The design is clean and professional, appropriate for stakeholder-facing brand guidelines.
+Fixed top navigation, scrollable content area below. Content area background: stone-50.
 
 ## Responsive Behavior
-- **Desktop:** Full horizontal navigation bar with all items visible
-- **Tablet:** Navigation may condense slightly, items remain horizontal
-- **Mobile:** Hamburger menu icon replaces navigation items, slide-out menu on tap
+- **Desktop (md+):** Full horizontal nav links
+- **Mobile:** Hamburger icon (white), slide-down mobile menu with black background, same text treatment
 
 ## Design Notes
-- Uses brand colors: Zinc (primary) and Slate (neutral)
-- Typography: DM Sans for navigation and headings
-- Minimal, professional aesthetic appropriate for brand guidelines
-- No authentication or user account features needed
-- Default view is table of contents showing all sections with descriptions
+- Black header reinforces the dark, premium brand character
+- Gold active state creates a clear but restrained highlight
+- No authentication UI — this is a public-facing brand reference site
+- Default section: Brand Foundation

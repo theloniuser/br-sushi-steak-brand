@@ -11,200 +11,271 @@
   "colors": [
     {
       "id": "color-1",
-      "name": "Primary Color",
-      "description": "Primary brand color for logos, accents, and signature elements",
-      "pantone": "PMS XXXX",
+      "name": "BR Sushi & Steak Black",
+      "description": "Primary brand black for type, logos, and dominant surfaces",
+      "pantone": "TBD",
       "rgb": { "r": 0, "g": 0, "b": 0 },
       "cmyk": { "c": 0, "m": 0, "y": 0, "k": 100 },
       "hex": "#000000",
-      "usage": "Use for primary branding elements, signage accents, and key messaging"
+      "usage": "Primary type, logo lockups, dominant backgrounds, and high-contrast applications"
     },
     {
       "id": "color-2",
-      "name": "Secondary Color",
-      "description": "Secondary brand color for accents and highlights",
-      "pantone": "PMS XXXX",
-      "rgb": { "r": 128, "g": 128, "b": 128 },
-      "cmyk": { "c": 0, "m": 0, "y": 0, "k": 50 },
-      "hex": "#808080",
-      "usage": "Use for accent elements, highlights, and secondary messaging"
+      "name": "BR Sushi & Steak Gold",
+      "description": "Brand gold for accents, logo color variants, and premium emphasis",
+      "pantone": "TBD",
+      "rgb": { "r": 173, "g": 147, "b": 109 },
+      "cmyk": { "c": 0, "m": 15, "y": 37, "k": 32 },
+      "hex": "#AD936D",
+      "usage": "Logo color variant, accent elements, premium highlights, and gold-on-black applications"
     },
     {
       "id": "color-3",
-      "name": "Neutral / Background",
-      "description": "Neutral color for backgrounds and large areas",
-      "pantone": "PMS XXXX",
+      "name": "BR Sushi & Steak Crimson",
+      "description": "Brand crimson for bold accent and signature emphasis",
+      "pantone": "TBD",
+      "rgb": { "r": 189, "g": 40, "b": 70 },
+      "cmyk": { "c": 0, "m": 79, "y": 63, "k": 26 },
+      "hex": "#BD2846",
+      "usage": "Signature accent, key callouts, and high-impact emphasis elements"
+    },
+    {
+      "id": "color-4",
+      "name": "White",
+      "description": "Clean white for reversed logo lockups and light surface backgrounds",
+      "pantone": "—",
       "rgb": { "r": 255, "g": 255, "b": 255 },
       "cmyk": { "c": 0, "m": 0, "y": 0, "k": 0 },
-      "hex": "#ffffff",
-      "usage": "Use for backgrounds, white space, and light surfaces"
+      "hex": "#FFFFFF",
+      "usage": "Reversed logo lockups on dark backgrounds, white surfaces, and open negative space"
     }
   ],
   "typographyStyles": [
     {
       "id": "type-1",
       "styleName": "Display Heading",
-      "fontFamily": "Brand Display Font",
-      "fontWeight": "Regular",
+      "fontFamily": "Lapture Display",
+      "fontWeight": "Bold",
       "fontSize": "64px",
       "lineHeight": "72px",
       "letterSpacing": "2px",
-      "example": "BRAND DISPLAY HEADING",
-      "usage": "Large headlines, hero sections, storefront signage"
+      "example": "BLUE RIBBON SUSHI &amp; STEAK",
+      "usage": "Hero sections, large storefront signage, and primary display headlines"
     },
     {
       "id": "type-2",
       "styleName": "Page Heading",
-      "fontFamily": "Brand Display Font",
-      "fontWeight": "Regular",
+      "fontFamily": "Lapture Display",
+      "fontWeight": "Bold",
       "fontSize": "48px",
       "lineHeight": "56px",
       "letterSpacing": "1.5px",
-      "example": "Page Heading Style",
-      "usage": "Page titles, section headers, major categories"
+      "example": "BRAND FOUNDATION",
+      "usage": "Page titles and primary section headers"
     },
     {
       "id": "type-3",
       "styleName": "Section Heading",
-      "fontFamily": "Brand Body Font",
+      "fontFamily": "Lapture Display",
       "fontWeight": "Bold",
       "fontSize": "32px",
       "lineHeight": "40px",
       "letterSpacing": "1px",
-      "example": "Section Heading Style",
-      "usage": "Section titles, card headers, subsections"
+      "example": "COLOR PALETTE",
+      "usage": "Section titles, card headers, and subsection labels"
     },
     {
       "id": "type-4",
       "styleName": "Subheading",
-      "fontFamily": "Brand Body Font",
+      "fontFamily": "Boston",
       "fontWeight": "SemiBold",
       "fontSize": "20px",
       "lineHeight": "28px",
       "letterSpacing": "0.5px",
-      "example": "Subheading and Callout Text",
-      "usage": "Subheadings, callouts, emphasis text"
+      "example": "Sushi & Steak — Midtown Manhattan",
+      "usage": "Subheadings, callouts, and emphasis text"
     },
     {
       "id": "type-5",
       "styleName": "Body Text",
-      "fontFamily": "Brand Body Font",
+      "fontFamily": "Boston",
       "fontWeight": "Regular",
       "fontSize": "16px",
-      "lineHeight": "24px",
+      "lineHeight": "26px",
       "letterSpacing": "0px",
-      "example": "This is an example of body text for extended reading.",
-      "usage": "Body copy, paragraphs, descriptions"
+      "example": "Blue Ribbon Sushi & Steak brings together the finest Japanese-inspired seafood and premium steakhouse traditions.",
+      "usage": "Body copy, paragraphs, and descriptions"
     },
     {
       "id": "type-6",
+      "styleName": "Body Bold",
+      "fontFamily": "Boston",
+      "fontWeight": "Bold",
+      "fontSize": "16px",
+      "lineHeight": "26px",
+      "letterSpacing": "0px",
+      "example": "Omakase Selection",
+      "usage": "Bold emphasis within body copy, menu item names, and key labels"
+    },
+    {
+      "id": "type-7",
       "styleName": "Small Text",
-      "fontFamily": "Brand Body Font",
+      "fontFamily": "Boston",
       "fontWeight": "Regular",
       "fontSize": "14px",
       "lineHeight": "20px",
       "letterSpacing": "0px",
-      "example": "Small text for captions and fine print.",
-      "usage": "Captions, metadata, disclaimers, fine print"
+      "example": "Consuming raw or undercooked meats may increase your risk of foodborne illness.",
+      "usage": "Captions, metadata, disclaimers, and fine print"
     },
     {
-      "id": "type-7",
+      "id": "type-8",
       "styleName": "Button / UI Text",
-      "fontFamily": "Brand UI Font",
-      "fontWeight": "Medium",
+      "fontFamily": "Boston",
+      "fontWeight": "SemiBold",
       "fontSize": "16px",
       "lineHeight": "24px",
-      "letterSpacing": "0.5px",
-      "example": "CALL TO ACTION",
-      "usage": "Buttons, calls-to-action, navigation items"
+      "letterSpacing": "1px",
+      "example": "DOWNLOAD",
+      "usage": "Buttons, calls-to-action, and navigation items"
     }
   ],
   "logoAssets": [
     {
       "id": "logo-1",
-      "name": "Primary Logo (Full Color)",
-      "description": "Primary brand logo in full color",
+      "name": "Primary Logo — Gold & Gray",
+      "description": "Primary logo in gold and gray; preferred colorway for most applications",
       "category": "primary",
-      "usageGuidelines": "Use on white or light backgrounds. Minimum width: 150px.",
+      "usageGuidelines": "Use on white or light backgrounds. Preferred default logo. Minimum width: 150px.",
       "files": [
-        { "format": "SVG", "size": "— KB", "downloadUrl": "/assets/logos/primary-logo.svg" },
-        { "format": "PNG", "size": "— KB", "downloadUrl": "/assets/logos/primary-logo@3x.png" }
+        { "format": "SVG", "size": "—", "downloadUrl": "/assets/logos/BR-Sushi-Steak_Primary-GoldGray.svg" },
+        { "format": "PNG", "size": "—", "downloadUrl": "/assets/logos/BR-Sushi-Steak_Primary-GoldGray.png" },
+        { "format": "JPG", "size": "—", "downloadUrl": "/assets/logos/BR-Sushi-Steak_Primary-GoldGray.jpg" }
       ]
     },
     {
       "id": "logo-2",
-      "name": "Primary Logo (Black)",
-      "description": "Primary brand logo in black for single-color applications",
-      "category": "monochrome",
-      "usageGuidelines": "Use when color reproduction is not available. Minimum width: 150px.",
+      "name": "Primary Logo — Black",
+      "description": "Primary logo in black for single-color or high-contrast applications",
+      "category": "primary",
+      "usageGuidelines": "Use on white or light backgrounds when color is not available. Minimum width: 150px.",
       "files": [
-        { "format": "SVG", "size": "— KB", "downloadUrl": "/assets/logos/primary-logo-black.svg" },
-        { "format": "PNG", "size": "— KB", "downloadUrl": "/assets/logos/primary-logo-black@3x.png" }
+        { "format": "SVG", "size": "—", "downloadUrl": "/assets/logos/BR-Sushi-Steak_Primary-Black.svg" },
+        { "format": "PNG", "size": "—", "downloadUrl": "/assets/logos/BR-Sushi-Steak_Primary-Black.png" },
+        { "format": "JPG", "size": "—", "downloadUrl": "/assets/logos/BR-Sushi-Steak_Primary-Black.jpg" }
       ]
     },
     {
       "id": "logo-3",
-      "name": "Primary Logo (White)",
-      "description": "White version for dark backgrounds",
-      "category": "monochrome",
-      "usageGuidelines": "Use on dark backgrounds or photography. Minimum width: 150px.",
+      "name": "Primary Logo — White",
+      "description": "Primary logo reversed to white for dark backgrounds",
+      "category": "primary",
+      "usageGuidelines": "Use on dark or black backgrounds and photography. Minimum width: 150px.",
       "files": [
-        { "format": "SVG", "size": "— KB", "downloadUrl": "/assets/logos/primary-logo-white.svg" },
-        { "format": "PNG", "size": "— KB", "downloadUrl": "/assets/logos/primary-logo-white@3x.png" }
+        { "format": "SVG", "size": "—", "downloadUrl": "/assets/logos/BR-Sushi-Steak_Primary-White.svg" },
+        { "format": "PNG", "size": "—", "downloadUrl": "/assets/logos/BR-Sushi-Steak_Primary-White.png" }
       ]
     },
     {
       "id": "logo-4",
-      "name": "Icon / Mark",
-      "description": "Brand icon or logomark for compact applications",
-      "category": "icon",
-      "usageGuidelines": "Use for app icons, social media avatars, favicon. Minimum size: 32px.",
+      "name": "Primary Logo — Gold & White",
+      "description": "Primary logo in gold and white for dark or black backgrounds",
+      "category": "primary",
+      "usageGuidelines": "Use on dark or black backgrounds where maximum contrast is desired. Minimum width: 150px.",
       "files": [
-        { "format": "SVG", "size": "— KB", "downloadUrl": "/assets/logos/brand-icon.svg" },
-        { "format": "PNG", "size": "— KB", "downloadUrl": "/assets/logos/brand-icon@3x.png" }
+        { "format": "SVG", "size": "—", "downloadUrl": "/assets/logos/BR-Sushi-Steak_Primary-GoldWhite.svg" },
+        { "format": "PNG", "size": "—", "downloadUrl": "/assets/logos/BR-Sushi-Steak_Primary-GoldWhite.png" }
+      ]
+    },
+    {
+      "id": "logo-5",
+      "name": "Secondary Logo — Gold & Gray",
+      "description": "Secondary/alternate logo lockup in gold and gray",
+      "category": "secondary",
+      "usageGuidelines": "Use on white or light backgrounds when the alternate layout is needed. Minimum width: 150px.",
+      "files": [
+        { "format": "SVG", "size": "—", "downloadUrl": "/assets/logos/BR-Sushi-Steak_Logo-Secondary-GoldGray.svg" },
+        { "format": "PNG", "size": "—", "downloadUrl": "/assets/logos/BR-Sushi-Steak_Logo-Secondary-GoldGray.png" },
+        { "format": "JPG", "size": "—", "downloadUrl": "/assets/logos/BR-Sushi-Steak_Logo-Secondary-GoldGray.jpg" }
+      ]
+    },
+    {
+      "id": "logo-6",
+      "name": "Secondary Logo — Black",
+      "description": "Secondary/alternate logo lockup in black",
+      "category": "secondary",
+      "usageGuidelines": "Use on white or light backgrounds when color is not available. Minimum width: 150px.",
+      "files": [
+        { "format": "SVG", "size": "—", "downloadUrl": "/assets/logos/BR-Sushi-Steak_Logo-Secondary-Black.svg" },
+        { "format": "PNG", "size": "—", "downloadUrl": "/assets/logos/BR-Sushi-Steak_Logo-Secondary-Black.png" },
+        { "format": "JPG", "size": "—", "downloadUrl": "/assets/logos/BR-Sushi-Steak_Logo-Secondary-Black.jpg" }
+      ]
+    },
+    {
+      "id": "logo-7",
+      "name": "Secondary Logo — White",
+      "description": "Secondary/alternate logo lockup in white for dark backgrounds",
+      "category": "secondary",
+      "usageGuidelines": "Use on dark or black backgrounds. Minimum width: 150px.",
+      "files": [
+        { "format": "SVG", "size": "—", "downloadUrl": "/assets/logos/BR-Sushi-Steak_Logo-Secondary-White.svg" },
+        { "format": "PNG", "size": "—", "downloadUrl": "/assets/logos/BR-Sushi-Steak_Logo-Secondary-White.png" }
+      ]
+    },
+    {
+      "id": "logo-8",
+      "name": "Secondary Logo — Gold & White",
+      "description": "Secondary/alternate logo lockup in gold and white for dark backgrounds",
+      "category": "secondary",
+      "usageGuidelines": "Use on dark or black backgrounds where maximum contrast is desired. Minimum width: 150px.",
+      "files": [
+        { "format": "SVG", "size": "—", "downloadUrl": "/assets/logos/BR-Sushi-Steak_Logo-Secondary-GoldWhite.svg" },
+        { "format": "PNG", "size": "—", "downloadUrl": "/assets/logos/BR-Sushi-Steak_Logo-Secondary-GoldWhite.png" }
       ]
     }
   ],
   "fontFiles": [
     {
       "id": "font-1",
-      "fontFamily": "Brand Display Font",
-      "weight": "Regular",
+      "fontFamily": "Lapture Display",
+      "weight": "Bold",
       "style": "Normal",
-      "format": "TTF",
-      "fileName": "BrandDisplayFont-Regular.ttf",
-      "fileSize": "— KB",
-      "downloadUrl": "/assets/fonts/BrandDisplayFont-Regular.ttf"
+      "source": "adobe-fonts",
+      "fontPageUrl": "https://fonts.adobe.com/fonts/lapture",
+      "licenseNote": "Available via Adobe Creative Cloud subscription. Activate through Adobe Fonts.",
+      "fileName": null,
+      "fileSize": null,
+      "downloadUrl": null
     },
     {
       "id": "font-2",
-      "fontFamily": "Brand Body Font",
+      "fontFamily": "Boston",
       "weight": "Regular",
       "style": "Normal",
       "format": "OTF",
-      "fileName": "BrandBodyFont-Regular.otf",
-      "fileSize": "— KB",
-      "downloadUrl": "/assets/fonts/BrandBodyFont-Regular.otf"
+      "fileName": "Boston-Regular.otf",
+      "fileSize": "—",
+      "downloadUrl": "/assets/fonts/Boston-Regular.otf"
     },
     {
       "id": "font-3",
-      "fontFamily": "Brand Body Font",
-      "weight": "Bold",
+      "fontFamily": "Boston",
+      "weight": "SemiBold",
       "style": "Normal",
       "format": "OTF",
-      "fileName": "BrandBodyFont-Bold.otf",
-      "fileSize": "— KB",
-      "downloadUrl": "/assets/fonts/BrandBodyFont-Bold.otf"
+      "fileName": "Boston-SemiBold.otf",
+      "fileSize": "—",
+      "downloadUrl": "/assets/fonts/Boston-SemiBold.otf"
     },
     {
       "id": "font-4",
-      "fontFamily": "Brand UI Font",
-      "weight": "Medium",
+      "fontFamily": "Boston",
+      "weight": "Bold",
       "style": "Normal",
-      "format": "TTF",
-      "fileName": "BrandUIFont-Medium.ttf",
-      "fileSize": "— KB",
-      "downloadUrl": "/assets/fonts/BrandUIFont-Medium.ttf"
+      "format": "OTF",
+      "fileName": "Boston-Bold.otf",
+      "fileSize": "—",
+      "downloadUrl": "/assets/fonts/Boston-Bold.otf"
     }
   ],
   "brandGuidelines": [
@@ -212,46 +283,46 @@
       "id": "guide-1",
       "title": "Logo Clear Space",
       "category": "logo-usage",
-      "rule": "Always maintain adequate clear space around the logo. Nothing should intrude within this protected zone.",
-      "doExample": "Logo with adequate breathing room on all sides, nothing within the clearspace zone.",
+      "rule": "Always maintain clear space around the logo equal to the height of the 'B' in 'BLUE'. No other elements should intrude within this protected zone.",
+      "doExample": "Logo with adequate breathing room on all sides — nothing within the clearspace zone.",
       "dontExample": "Logo crowded by text, borders, or other design elements within the clearspace.",
-      "exampleImageUrl": "/assets/guidelines/logo-clearspace.png"
+      "exampleImageUrl": ""
     },
     {
       "id": "guide-2",
       "title": "Logo on Photography",
       "category": "logo-usage",
-      "rule": "When placing the logo on photography, ensure sufficient contrast. Use white or black version depending on the background.",
-      "doExample": "White logo on dark photography with clear visibility and contrast.",
-      "dontExample": "Color logo on busy, mid-tone photography where it becomes hard to read.",
-      "exampleImageUrl": "/assets/guidelines/logo-on-photo.png"
+      "rule": "When placing the logo on photography, ensure sufficient contrast. Use the White or Gold & White version on dark imagery, Black or Gold & Gray on light imagery.",
+      "doExample": "White or Gold & White logo on dark food photography with clear visibility and contrast.",
+      "dontExample": "Color logo on busy mid-tone photography where it becomes difficult to read.",
+      "exampleImageUrl": ""
     },
     {
       "id": "guide-3",
       "title": "Color Application",
       "category": "color",
-      "rule": "Use brand colors consistently and purposefully. Primary color should dominate; secondary colors should accent.",
-      "doExample": "Primary color used for main brand elements, secondary as accents on appropriate backgrounds.",
-      "dontExample": "Random color mixing or using off-brand colors that dilute the brand identity.",
-      "exampleImageUrl": "/assets/guidelines/color-usage.png"
+      "rule": "Black is the dominant surface color. Gold is reserved for logo variants and premium accent elements. Crimson is used sparingly for high-impact emphasis. Never use Crimson as a background or large-area fill.",
+      "doExample": "Black background with Gold logo and limited Crimson accent on a key callout.",
+      "dontExample": "Crimson or Gold used as dominant background colors across large areas.",
+      "exampleImageUrl": ""
     },
     {
       "id": "guide-4",
       "title": "Typography Pairing",
       "category": "typography",
-      "rule": "Always pair the display font for headings with the body font for paragraphs. Never use the display font for extended body copy.",
-      "doExample": "Display font headline with body font paragraph text below.",
-      "dontExample": "Display font used for body copy or long-form content.",
-      "exampleImageUrl": "/assets/guidelines/typography-pairing.png"
+      "rule": "Always pair Lapture Display Bold for headings with Boston for body copy. Lapture Display headings are always uppercase — never sentence case or title case. Never use Lapture Display for extended paragraph text. Boston Bold can be used for menu item names and strong in-body labels.",
+      "doExample": "LAPTURE DISPLAY UPPERCASE HEADLINE with Boston Regular paragraph text below.",
+      "dontExample": "Lapture Display in sentence case, or used for body copy or any text requiring extended reading.",
+      "exampleImageUrl": ""
     },
     {
       "id": "guide-5",
       "title": "Logo Modifications",
       "category": "logo-usage",
-      "rule": "Never modify the logo by stretching, rotating, adding effects, or changing colors outside approved variations.",
-      "doExample": "Logo used in approved color variations at correct proportions.",
-      "dontExample": "Logo stretched, outlined, shadowed, tilted, or recolored in unapproved ways.",
-      "exampleImageUrl": "/assets/guidelines/logo-dont-modify.png"
+      "rule": "Never modify the logo by stretching, rotating, adding effects, or applying unapproved colors. Only the four approved color variants (Gold & Gray, Black, White, Gold & White) may be used.",
+      "doExample": "Logo used in one of the four approved color variants at correct proportions.",
+      "dontExample": "Logo stretched, outlined, shadowed, tilted, or recolored in any unapproved way.",
+      "exampleImageUrl": ""
     }
   ]
 }

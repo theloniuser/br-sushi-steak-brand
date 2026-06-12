@@ -2,54 +2,69 @@
   "sections": [
     {
       "id": "main-menus",
-      "title": "Main Menus",
-      "description": "Primary menu boards and full-service menus.",
+      "title": "Dinner & Lunch Menus",
+      "description": "Primary dine-in menus for lunch and dinner service.",
       "menus": [
         {
-          "id": "menu-1",
-          "name": "Main Menu",
-          "description": "Full dine-in menu",
+          "id": "menu-dinner",
+          "name": "Dinner Menu",
+          "description": "Full dinner menu — current version dated May 27, 2026",
           "type": "dine-in",
-          "dimensions": { "width": "8.5in", "height": "11in" },
           "orientation": "portrait",
-          "previewUrl": "/assets/menus-signage/menus/main-menu-preview.jpg",
-          "viewUrl": "/assets/menus-signage/menus/main-menu-preview.jpg",
+          "previewUrl": "",
+          "viewUrl": "/assets/menus-signage/menus/SushiSteak-DinnerMenu-5.27.26.pdf",
           "files": [
-            { "format": "PDF", "downloadUrl": "/assets/menus-signage/menus/main-menu.pdf" },
-            { "format": "PNG", "downloadUrl": "/assets/menus-signage/menus/main-menu.png" }
+            { "format": "PDF", "downloadUrl": "/assets/menus-signage/menus/SushiSteak-DinnerMenu-5.27.26.pdf" }
           ]
         },
         {
-          "id": "menu-2",
-          "name": "Takeout Menu",
-          "description": "Takeout and delivery menu",
-          "type": "takeout",
-          "dimensions": { "width": "8.5in", "height": "11in" },
+          "id": "menu-lunch",
+          "name": "Lunch Menu",
+          "description": "Full lunch menu — current version dated May 6, 2026",
+          "type": "dine-in",
           "orientation": "portrait",
-          "previewUrl": "/assets/menus-signage/menus/takeout-menu-preview.jpg",
-          "viewUrl": "/assets/menus-signage/menus/takeout-menu-preview.jpg",
+          "previewUrl": "",
+          "viewUrl": "/assets/menus-signage/menus/SushiSteak-LunchMenu-5.6.26.pdf",
           "files": [
-            { "format": "PDF", "downloadUrl": "/assets/menus-signage/menus/takeout-menu.pdf" }
+            { "format": "PDF", "downloadUrl": "/assets/menus-signage/menus/SushiSteak-LunchMenu-5.6.26.pdf" }
           ]
         }
       ]
     },
     {
       "id": "specialty-menus",
-      "title": "Specialty Menus",
-      "description": "Beverage, seasonal, and specialty menus.",
+      "title": "Beverage & Specialty Menus",
+      "description": "Beverage list and specialty menus.",
       "menus": [
         {
-          "id": "menu-3",
-          "name": "Beverage Menu",
-          "description": "Full drinks and beverage offerings",
+          "id": "menu-beverage",
+          "name": "Beverage List",
+          "description": "Full beverage menu — current version dated June 5, 2026",
           "type": "beverage",
-          "dimensions": { "width": "5.5in", "height": "8.5in" },
           "orientation": "portrait",
-          "previewUrl": "/assets/menus-signage/menus/beverage-menu-preview.jpg",
-          "viewUrl": "/assets/menus-signage/menus/beverage-menu-preview.jpg",
+          "previewUrl": "",
+          "viewUrl": "/assets/menus-signage/menus/SushiSteak-BeverageList-6.5.26.pdf",
           "files": [
-            { "format": "PDF", "downloadUrl": "/assets/menus-signage/menus/beverage-menu.pdf" }
+            { "format": "PDF", "downloadUrl": "/assets/menus-signage/menus/SushiSteak-BeverageList-6.5.26.pdf" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "catering-menus",
+      "title": "Catering & Group Dining",
+      "description": "Catering and private event menus.",
+      "menus": [
+        {
+          "id": "menu-catering",
+          "name": "Catering Menu",
+          "description": "Catering and private dining menu — current version dated January 13, 2026",
+          "type": "catering",
+          "orientation": "portrait",
+          "previewUrl": "",
+          "viewUrl": "/assets/menus-signage/menus/SushiSteak-CateringMenu-1.13.26.pdf",
+          "files": [
+            { "format": "PDF", "downloadUrl": "/assets/menus-signage/menus/SushiSteak-CateringMenu-1.13.26.pdf" }
           ]
         }
       ]

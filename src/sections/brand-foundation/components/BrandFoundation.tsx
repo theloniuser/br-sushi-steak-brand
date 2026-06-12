@@ -65,11 +65,9 @@ export function BrandFoundation({
  className="bg-white rounded-2xl overflow-hidden shadow-lg shadow-zinc-200/50 border border-zinc-200 hover:shadow-xl hover:shadow-zinc-300/50:shadow-black/70 transition-all duration-300"
  >
  <div
- className="h-32 relative"
+ className={`h-32${color.hex.toLowerCase() === '#ffffff' ? ' border-b border-zinc-200' : ''}`}
  style={{ backgroundColor: color.hex }}
- >
- <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black/10"></div>
- </div>
+ />
  <div className="p-6 space-y-4">
  <div>
  <h3 className="text-2xl font-bold text-zinc-900 mb-1">

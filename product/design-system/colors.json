@@ -1,4 +1,10 @@
 {
-  "primary": "zinc",
-  "neutral": "slate"
+  "primary": "stone",
+  "neutral": "stone",
+  "brand": {
+    "black": "#000000",
+    "gold": "#AD936D",
+    "crimson": "#BD2846",
+    "white": "#FFFFFF"
+  }
 }

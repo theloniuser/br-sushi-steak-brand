@@ -3,7 +3,7 @@ import type { VisualAssetsProps } from '@/../product/sections/visual-assets/type
 import { downloadAsZip } from '@/lib/downloadUtils'
 
 export function VisualAssets({
- textures,
+ graphics,
  icons,
  decorativeElements,
  onAssetDownload
@@ -27,67 +27,64 @@ export function VisualAssets({
  </div>
 
  <div className="max-w-7xl mx-auto px-6 py-16 lg:py-24 space-y-24">
- {/* Textures Section */}
- <section id="textures">
+ {/* Graphics Section */}
+ <section id="graphics">
  <div className="mb-12">
  <div className="flex items-start justify-between mb-4">
  <h2 className="text-4xl lg:text-5xl font-bold text-zinc-900 tracking-tight">
- Textures
+ Graphics
  </h2>
  <button
  onClick={async () => {
- // Download all textures as zip
- const files = textures.flatMap(texture =>
- texture.files.map(file => ({
+ const files = graphics.flatMap(graphic =>
+ graphic.files.map(file => ({
  url: file.downloadUrl,
- filename: file.downloadUrl.split('/').pop() || `${texture.name}.${file.format.toLowerCase()}`
+ filename: file.downloadUrl.split('/').pop() || `${graphic.name}.${file.format.toLowerCase()}`
  }))
  )
- await downloadAsZip(files, 'Brand-Textures')
+ await downloadAsZip(files, 'Brand-Graphics')
  }}
  className="flex items-center gap-2 px-4 py-2.5 bg-brand-action hover:bg-brand-action-hover text-white rounded-lg font-semibold transition-colors whitespace-nowrap"
  >
  <Download className="w-4 h-4" />
- Download All ({textures.length})
+ Download All ({graphics.length})
  </button>
  </div>
  <p className="text-lg text-zinc-600 max-w-2xl">
- Surface textures to add depth and tactile quality to branded materials.
+ Brand graphic elements including cultural motifs, illustrated lockups, and collateral.
  </p>
  </div>
 
  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
- {textures.map((texture) => (
+ {graphics.map((graphic) => (
  <div
- key={texture.id}
+ key={graphic.id}
  className="bg-white rounded-2xl overflow-hidden shadow-lg shadow-zinc-200/50 border border-zinc-200 hover:shadow-xl hover:shadow-zinc-300/50:shadow-black/70 transition-all duration-300"
  >
  <div className="aspect-[4/3] bg-[#e6e7e8] flex items-center justify-center p-6 border-b border-zinc-200 overflow-hidden">
  <img
- src={texture.previewUrl || '/assets/ADS-placeholderThm@3x.png'}
-              onError={(e) => { (e.target as HTMLImageElement).src = '/assets/ADS-placeholderThm@3x.png' }}
- alt={texture.name}
+ src={graphic.previewUrl || '/assets/ADS-placeholderThm@3x.png'}
+ onError={(e) => { (e.target as HTMLImageElement).src = '/assets/ADS-placeholderThm@3x.png' }}
+ alt={graphic.name}
  loading="lazy"
- className="w-full h-full object-cover"
+ className="w-full h-full object-contain"
  />
  </div>
  <div className="p-5 space-y-3">
  <div>
  <h3 className="text-base font-bold text-zinc-900 mb-1">
- {texture.name}
+ {graphic.name}
  </h3>
  <p className="text-xs text-zinc-600 line-clamp-2">
- {texture.description}
+ {graphic.description}
  </p>
  </div>
-
-
  <div className="pt-2 border-t border-zinc-100">
  <div className="flex flex-wrap gap-1.5">
- {texture.files.map((file, idx) => (
+ {graphic.files.map((file, idx) => (
  <button
  key={idx}
- onClick={() => onAssetDownload?.(texture.id, file.format)}
+ onClick={() => onAssetDownload?.(graphic.id, file.format)}
  className="group bg-brand-action hover:bg-brand-action-hover text-white px-2.5 py-1.5 rounded text-xs font-semibold transition-all duration-200 flex items-center gap-1 active:scale-95"
  >
  <Download className="w-3 h-3" />

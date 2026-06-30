@@ -19,7 +19,7 @@ export default function BrandFoundationPreview() {
 
  const handleFontDownload = (fontId: string) => {
    const font = data.fontFiles.find(f => f.id === fontId)
-   if (!font) return
+   if (!font || !font.downloadUrl || !font.fileName) return
 
    const link = document.createElement('a')
    link.href = font.downloadUrl

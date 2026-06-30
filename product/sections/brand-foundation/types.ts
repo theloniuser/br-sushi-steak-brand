@@ -58,10 +58,13 @@ export interface FontFile {
   fontFamily: string
   weight: string
   style: 'Normal' | 'Italic' | string
-  format: 'OTF' | 'TTF' | 'WOFF' | 'WOFF2' | string
-  fileName: string
-  fileSize: string
-  downloadUrl: string
+  format?: 'OTF' | 'TTF' | 'WOFF' | 'WOFF2' | string
+  fileName: string | null
+  fileSize: string | null
+  downloadUrl: string | null
+  source?: string
+  fontPageUrl?: string
+  licenseNote?: string
 }
 
 export interface BrandGuideline {

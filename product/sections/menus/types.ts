@@ -8,7 +8,7 @@ export interface Menu {
   name: string
   description: string
   type: string
-  dimensions: {
+  dimensions?: {
     width: string
     height: string
   }

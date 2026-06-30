@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import data from '@/../product/sections/signage/data.json'
+import type { SignageStandard, WayfindingElement, PromotionalSignage } from '@/../product/sections/signage/types'
 import { Signage as SignageComponent } from './components/Signage'
 import { ImageModal } from '@/components/ImageModal'
 
@@ -9,9 +10,9 @@ export default function SignagePreview() {
  const handleSignageDownload = (signageId: string, format: string) => {
    // Search all signage arrays for the item
    const allSignage = [
-     ...data.signageStandards,
-     ...data.wayfinding,
-     ...data.promotional
+     ...(data.signageStandards as SignageStandard[]),
+     ...(data.wayfinding as WayfindingElement[]),
+     ...(data.promotional as PromotionalSignage[])
    ]
 
    const signage = allSignage.find(s => s.id === signageId)

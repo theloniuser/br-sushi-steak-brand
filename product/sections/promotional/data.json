@@ -1,0 +1,34 @@
+{
+  "sections": [
+    {
+      "id": "social-media",
+      "title": "Social Media Graphics",
+      "description": "Templates and assets for Instagram, Facebook, and other social channels.",
+      "assets": []
+    },
+    {
+      "id": "print-digital-ads",
+      "title": "Print & Digital Advertising",
+      "description": "Print ads, digital banner ads, and out-of-home advertising materials.",
+      "assets": [
+        {
+          "id": "promo-knicks-ad-summer2026",
+          "name": "Knicks Ad — Summer 2026",
+          "description": "Print advertisement for the New York Knicks partnership, Summer 2026.",
+          "channel": "Print",
+          "previewUrl": "/assets/promotional/thumbnails/knicks-ad.png",
+          "viewUrl": "/assets/promotional/print-digital-ads/Sushi-Steak_Knicks-Ad_Summer2026.pdf",
+          "files": [
+            { "format": "PDF", "downloadUrl": "/assets/promotional/print-digital-ads/Sushi-Steak_Knicks-Ad_Summer2026.pdf" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "email-campaigns",
+      "title": "Email & Digital Campaigns",
+      "description": "Email newsletter templates and digital campaign assets.",
+      "assets": []
+    }
+  ]
+}

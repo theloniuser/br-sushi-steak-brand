@@ -11,8 +11,8 @@ Graphics, photos, marketing materials, and promotional assets.
 ### 3. Architectural & Spatial Design
 Construction plans, elevations, measurements, and material specifications.
 
-### 4. Menus
-Food menu designs, menu board templates, and ordering displays for all locations.
+### 4. Menus & Signage
+Food menu designs, signage standards, wayfinding systems, and ordering displays for all locations.
 
-### 5. Signage
-Exterior and interior signage standards, wayfinding systems, and promotional materials.
+### 5. Promotional
+Marketing materials for social media, print and digital advertising, and email campaigns.

@@ -2,23 +2,79 @@
   "interiors": [
     {
       "id": "int-1",
-      "name": "Dining Room",
-      "description": "Primary dining space",
-      "imageUrl": "/assets/architectural-spatial-design/interiors/dining-room.jpg",
+      "name": "Sushi Bar Counter",
+      "description": "Sushi counter with chef service and guest seating",
+      "imageUrl": "/assets/architectural-spatial-design/interiors/sushi-bar-counter-guests.jpg",
       "category": "interiors"
     },
     {
       "id": "int-2",
-      "name": "Bar Area",
-      "description": "Bar and lounge seating area",
-      "imageUrl": "/assets/architectural-spatial-design/interiors/bar-area.jpg",
+      "name": "Sushi Bar & Dining Room",
+      "description": "Wide view of the sushi bar and adjoining dining room",
+      "imageUrl": "/assets/architectural-spatial-design/interiors/sushi-bar-dining-room-wide.jpg",
       "category": "interiors"
     },
     {
       "id": "int-3",
-      "name": "Interior Detail",
-      "description": "Interior branding and design detail",
-      "imageUrl": "/assets/architectural-spatial-design/interiors/interior-detail.jpg",
+      "name": "Cocktail Bar",
+      "description": "Cocktail bar with bartender service",
+      "imageUrl": "/assets/architectural-spatial-design/interiors/cocktail-bar-service.jpg",
+      "category": "interiors"
+    },
+    {
+      "id": "int-4",
+      "name": "Dining Room — Evening Service",
+      "description": "Dining room and sushi bar during a busy evening service",
+      "imageUrl": "/assets/architectural-spatial-design/interiors/dining-room-busy-service-1.jpg",
+      "category": "interiors"
+    },
+    {
+      "id": "int-5",
+      "name": "Dining Room — Evening Service (Alt)",
+      "description": "Dining room and sushi bar during a busy evening service",
+      "imageUrl": "/assets/architectural-spatial-design/interiors/dining-room-busy-service-2.jpg",
+      "category": "interiors"
+    },
+    {
+      "id": "int-6",
+      "name": "Booth Seating",
+      "description": "Booth seating along the dining room wall",
+      "imageUrl": "/assets/architectural-spatial-design/interiors/dining-room-booths-1.jpg",
+      "category": "interiors"
+    },
+    {
+      "id": "int-7",
+      "name": "Booth Seating & Bar View",
+      "description": "Booth seating with a view toward the bar",
+      "imageUrl": "/assets/architectural-spatial-design/interiors/dining-room-booths-bar-view.jpg",
+      "category": "interiors"
+    },
+    {
+      "id": "int-8",
+      "name": "Bar Area",
+      "description": "Full bar with curated spirits selection",
+      "imageUrl": "/assets/architectural-spatial-design/interiors/bar-area-empty.jpg",
+      "category": "interiors"
+    },
+    {
+      "id": "int-9",
+      "name": "Bar Shelving Detail",
+      "description": "Detail view of bar shelving and spirits display",
+      "imageUrl": "/assets/architectural-spatial-design/interiors/bar-shelving-detail.jpg",
+      "category": "interiors"
+    },
+    {
+      "id": "int-10",
+      "name": "Sushi Chef at Work",
+      "description": "Sushi chef plating a roll at the counter",
+      "imageUrl": "/assets/architectural-spatial-design/interiors/sushi-chef-plating.jpg",
+      "category": "interiors"
+    },
+    {
+      "id": "int-11",
+      "name": "Dining Room — Daylight",
+      "description": "Dining room and bar seating in daylight",
+      "imageUrl": "/assets/architectural-spatial-design/interiors/dining-room-daylight.jpg",
       "category": "interiors"
     }
   ],

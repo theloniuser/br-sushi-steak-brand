@@ -284,7 +284,7 @@ export function ScreenDesignFullscreen() {
  <ShellComponent
  navigationItems={navigationItems}
  logoSrc="/assets/logos/BR-Sushi-Steak_Primary-White.svg"
- logoAlt="BR Sushi &amp; Steak Brand Guidelines"
+ logoAlt="BR Sushi & Steak Brand Guidelines"
  user={defaultUser}
  onNavigate={handleNavigate}
  onLogout={() => {}}

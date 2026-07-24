@@ -2,17 +2,26 @@ import { Download, ZoomIn } from 'lucide-react'
 import type { SignageProps } from '@/../product/sections/signage/types'
 import { downloadAsZip } from '@/lib/downloadUtils'
 
+interface SignageComponentProps extends SignageProps {
+  hideHero?: boolean
+}
+
 export function Signage({
   signageStandards,
   wayfinding,
   promotional,
   onSignageDownload,
-  onSignageView
-}: SignageProps) {
+  onSignageView,
+  hideHero
+}: SignageComponentProps) {
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div className={hideHero ? 'bg-slate-50' : 'min-h-screen bg-slate-50'}>
       {/* Hero Section */}
-      <div className="relative bg-zinc-800 bg-cover bg-center overflow-hidden">
+      {!hideHero && (
+      <div
+        className="relative bg-zinc-800 bg-cover bg-center overflow-hidden"
+        style={{ backgroundImage: "url('/assets/architectural-spatial-design/interiors/Dining-Room-Evening-Service-Brighter.jpg')" }}
+      >
         <div className="absolute inset-0 bg-gradient-to-br from-black/30 via-black/20 to-black/30"></div>
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjAzKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] opacity-40"></div>
         <div className="relative max-w-7xl mx-auto px-6 py-20 lg:py-32">
@@ -26,6 +35,7 @@ export function Signage({
           </div>
         </div>
       </div>
+      )}
 
       <div className="max-w-7xl mx-auto px-6 py-16 lg:py-24 space-y-32">
         {/* Environmental Section */}

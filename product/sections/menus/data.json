@@ -11,7 +11,7 @@
           "description": "Full dinner menu — current version dated May 27, 2026",
           "type": "dine-in",
           "orientation": "portrait",
-          "previewUrl": "",
+          "previewUrl": "/assets/menus-signage/menus/thumbnails/dinner-menu.png",
           "viewUrl": "/assets/menus-signage/menus/SushiSteak-DinnerMenu-5.27.26.pdf",
           "files": [
             { "format": "PDF", "downloadUrl": "/assets/menus-signage/menus/SushiSteak-DinnerMenu-5.27.26.pdf" }
@@ -23,7 +23,7 @@
           "description": "Full lunch menu — current version dated May 6, 2026",
           "type": "dine-in",
           "orientation": "portrait",
-          "previewUrl": "",
+          "previewUrl": "/assets/menus-signage/menus/thumbnails/lunch-menu.png",
           "viewUrl": "/assets/menus-signage/menus/SushiSteak-LunchMenu-5.6.26.pdf",
           "files": [
             { "format": "PDF", "downloadUrl": "/assets/menus-signage/menus/SushiSteak-LunchMenu-5.6.26.pdf" }
@@ -42,7 +42,7 @@
           "description": "Full beverage menu — current version dated June 5, 2026",
           "type": "beverage",
           "orientation": "portrait",
-          "previewUrl": "",
+          "previewUrl": "/assets/menus-signage/menus/thumbnails/beverage-list.png",
           "viewUrl": "/assets/menus-signage/menus/SushiSteak-BeverageList-6.5.26.pdf",
           "files": [
             { "format": "PDF", "downloadUrl": "/assets/menus-signage/menus/SushiSteak-BeverageList-6.5.26.pdf" }
@@ -61,7 +61,7 @@
           "description": "Catering and private dining menu — current version dated January 13, 2026",
           "type": "catering",
           "orientation": "portrait",
-          "previewUrl": "",
+          "previewUrl": "/assets/menus-signage/menus/thumbnails/catering-menu.png",
           "viewUrl": "/assets/menus-signage/menus/SushiSteak-CateringMenu-1.13.26.pdf",
           "files": [
             { "format": "PDF", "downloadUrl": "/assets/menus-signage/menus/SushiSteak-CateringMenu-1.13.26.pdf" }

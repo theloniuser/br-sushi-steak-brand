@@ -1,16 +1,11 @@
 import { Download, ZoomIn } from 'lucide-react'
-import type { MenusProps } from '@/../product/sections/menus/types'
+import type { PromotionalProps } from '@/../product/sections/promotional/types'
 import { downloadAsZip } from '@/lib/downloadUtils'
 
-interface MenusComponentProps extends MenusProps {
- hideHero?: boolean
-}
-
-export function Menus({ sections, onMenuDownload, onMenuView, hideHero }: MenusComponentProps) {
+export function Promotional({ sections, onAssetDownload, onAssetView }: PromotionalProps) {
  return (
- <div className={hideHero ? 'bg-slate-50' : 'min-h-screen bg-slate-50'}>
+ <div className="min-h-screen bg-slate-50">
  {/* Hero Section */}
- {!hideHero && (
  <div
  className="relative bg-zinc-800 bg-cover bg-center overflow-hidden"
  style={{ backgroundImage: "url('/assets/architectural-spatial-design/interiors/Dining-Room-Evening-Service-Brighter.jpg')" }}
@@ -20,15 +15,14 @@ export function Menus({ sections, onMenuDownload, onMenuView, hideHero }: MenusC
  <div className="relative max-w-7xl mx-auto px-6 py-20 lg:py-32">
  <div className="max-w-3xl">
  <h1 className="text-5xl lg:text-7xl font-bold text-white mb-6 tracking-tight drop-shadow-lg">
- Menus
+ Promotional
  </h1>
  <p className="text-xl font-semibold text-white leading-relaxed drop-shadow-md">
- Main menu boards, take-out, beverage and catering menus.
+ Marketing materials for social media, print, digital advertising, and email campaigns.
  </p>
  </div>
  </div>
  </div>
- )}
 
  <div className="max-w-7xl mx-auto px-6 py-16 lg:py-24 space-y-24">
  {sections.map((section) => (
@@ -38,43 +32,47 @@ export function Menus({ sections, onMenuDownload, onMenuView, hideHero }: MenusC
  <h2 className="text-4xl lg:text-5xl font-bold text-zinc-900 tracking-tight">
  {section.title}
  </h2>
+ {section.assets.length > 0 && (
  <button
  onClick={async () => {
- // Download all menus in this section as zip
- const files = section.menus.flatMap(menu =>
- menu.files.map(file => ({
+ const files = section.assets.flatMap(asset =>
+ asset.files.map(file => ({
  url: file.downloadUrl,
- filename: file.downloadUrl.split('/').pop() || `${menu.name}.${file.format.toLowerCase()}`
+ filename: file.downloadUrl.split('/').pop() || `${asset.name}.${file.format.toLowerCase()}`
  }))
  )
- const zipName = `Brand-Menus-${section.title.replace(/\s+/g, '-')}`
+ const zipName = `BR-Sushi-Steak-Promotional-${section.title.replace(/\s+/g, '-')}`
  await downloadAsZip(files, zipName)
  }}
  className="flex items-center gap-2 px-4 py-2.5 bg-brand-action hover:bg-brand-action-hover text-white rounded-lg font-semibold transition-colors whitespace-nowrap"
  >
  <Download className="w-4 h-4" />
- Download All ({section.menus.length})
+ Download All ({section.assets.length})
  </button>
+ )}
  </div>
  <p className="text-lg text-zinc-600 max-w-2xl">
  {section.description}
  </p>
  </div>
 
+ {section.assets.length === 0 ? (
+ <p className="text-zinc-400 italic">No assets uploaded yet.</p>
+ ) : (
  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
- {section.menus.map((menu) => (
+ {section.assets.map((asset) => (
  <div
- key={menu.id}
- className="bg-white rounded-2xl overflow-hidden shadow-lg shadow-zinc-200/50 border border-zinc-200 hover:shadow-xl hover:shadow-zinc-300/50:shadow-black/70 transition-all duration-300 group"
+ key={asset.id}
+ className="bg-white rounded-2xl overflow-hidden shadow-lg shadow-zinc-200/50 border border-zinc-200 hover:shadow-xl hover:shadow-zinc-300/50 transition-all duration-300 group"
  >
  <div
  className="relative aspect-[4/3] bg-[#e6e7e8] overflow-hidden cursor-pointer"
- onClick={() => onMenuView?.(menu.id)}
+ onClick={() => onAssetView?.(asset.id)}
  >
  <img
- src={menu.previewUrl || '/assets/ADS-placeholderThm@3x.png'}
-              onError={(e) => { (e.target as HTMLImageElement).src = '/assets/ADS-placeholderThm@3x.png' }}
- alt={menu.name}
+ src={asset.previewUrl || '/assets/ADS-placeholderThm@3x.png'}
+ onError={(e) => { (e.target as HTMLImageElement).src = '/assets/ADS-placeholderThm@3x.png' }}
+ alt={asset.name}
  loading="lazy"
  className="w-full h-full object-cover"
  />
@@ -83,7 +81,7 @@ export function Menus({ sections, onMenuDownload, onMenuView, hideHero }: MenusC
  <button
  onClick={(e) => {
  e.stopPropagation()
- onMenuView?.(menu.id)
+ onAssetView?.(asset.id)
  }}
  className="p-3 bg-white/90 hover:bg-white rounded-full transition-colors pointer-events-auto"
  title="View Full Size"
@@ -93,7 +91,7 @@ export function Menus({ sections, onMenuDownload, onMenuView, hideHero }: MenusC
  <button
  onClick={(e) => {
  e.stopPropagation()
- onMenuDownload?.(menu.id, menu.files[0]?.format)
+ onAssetDownload?.(asset.id, asset.files[0]?.format)
  }}
  className="p-3 bg-brand-action hover:bg-brand-action-hover rounded-full transition-colors pointer-events-auto"
  title="Download"
@@ -104,15 +102,16 @@ export function Menus({ sections, onMenuDownload, onMenuView, hideHero }: MenusC
  </div>
  <div className="p-6">
  <h3 className="text-xl font-bold text-zinc-900 mb-1">
- {menu.name}
+ {asset.name}
  </h3>
  <p className="text-sm text-zinc-600">
- {menu.description}
+ {asset.description}
  </p>
  </div>
  </div>
  ))}
  </div>
+ )}
  </section>
  ))}
  </div>

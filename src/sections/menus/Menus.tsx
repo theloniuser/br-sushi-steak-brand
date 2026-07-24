@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import data from '@/../product/sections/menus/data.json'
 import { Menus as MenusComponent } from './components/Menus'
-import { ImageModal } from '@/components/ImageModal'
+import { PdfModal } from '@/components/PdfModal'
 
 export default function MenusPreview() {
- const [modalImage, setModalImage] = useState<{ url: string; name: string } | null>(null)
+ const [modalPdf, setModalPdf] = useState<{ url: string; name: string } | null>(null)
 
  const handleMenuDownload = (menuId: string, format: string) => {
    // Search all sections for the menu
@@ -37,7 +37,7 @@ export default function MenusPreview() {
 
    if (!menu || !menu.viewUrl) return
 
-   setModalImage({ url: menu.viewUrl, name: menu.name })
+   setModalPdf({ url: menu.viewUrl, name: menu.name })
  }
 
  return (
@@ -47,11 +47,11 @@ export default function MenusPreview() {
  onMenuDownload={handleMenuDownload}
  onMenuView={handleMenuView}
  />
- <ImageModal
- isOpen={!!modalImage}
- imageUrl={modalImage?.url || ''}
- imageName={modalImage?.name || ''}
- onClose={() => setModalImage(null)}
+ <PdfModal
+ isOpen={!!modalPdf}
+ pdfUrl={modalPdf?.url || ''}
+ pdfName={modalPdf?.name || ''}
+ onClose={() => setModalPdf(null)}
  />
  </>
  )

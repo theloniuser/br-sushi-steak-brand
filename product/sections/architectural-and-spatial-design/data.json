@@ -76,6 +76,20 @@
       "description": "Dining room and bar seating in daylight",
       "imageUrl": "/assets/architectural-spatial-design/interiors/dining-room-daylight.jpg",
       "category": "interiors"
+    },
+    {
+      "id": "int-12",
+      "name": "Booth Seating — HDR",
+      "description": "Booth seating along the dining room wall, HDR exposure",
+      "imageUrl": "/assets/architectural-spatial-design/interiors/dining-room-booths-hdr.jpg",
+      "category": "interiors"
+    },
+    {
+      "id": "int-13",
+      "name": "Booth Seating & Bar View (Alt)",
+      "description": "Booth seating with a view toward the bar, alternate angle",
+      "imageUrl": "/assets/architectural-spatial-design/interiors/dining-room-booths-bar-view-alt.jpg",
+      "category": "interiors"
     }
   ],
   "murals": [

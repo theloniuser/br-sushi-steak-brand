@@ -90,6 +90,13 @@
       "description": "Booth seating with a view toward the bar, alternate angle",
       "imageUrl": "/assets/architectural-spatial-design/interiors/dining-room-booths-bar-view-alt.jpg",
       "category": "interiors"
+    },
+    {
+      "id": "int-14",
+      "name": "Dining Room — Evening Service (Alt 2)",
+      "description": "Dining room and sushi bar full of guests during a busy evening service",
+      "imageUrl": "/assets/architectural-spatial-design/interiors/dining-room-busy-service-3.jpg",
+      "category": "interiors"
     }
   ],
   "murals": [

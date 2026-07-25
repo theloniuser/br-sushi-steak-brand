@@ -112,8 +112,8 @@
     {
       "id": "ext-2",
       "name": "Exterior Signage",
-      "description": "Exterior signage and awning",
-      "imageUrl": "/assets/architectural-spatial-design/exteriors/exterior-signage.jpg",
+      "description": "Illuminated storefront wordmark and kanji roundels above the entrance",
+      "imageUrl": "/assets/architectural-spatial-design/exteriors/storefront-entrance-illuminated-signage.jpg",
       "category": "exteriors"
     },
     {
@@ -121,6 +121,13 @@
       "name": "Entrance",
       "description": "Main entrance and entry experience",
       "imageUrl": "/assets/architectural-spatial-design/exteriors/entrance.jpg",
+      "category": "exteriors"
+    },
+    {
+      "id": "ext-4",
+      "name": "Outdoor Patio Seating",
+      "description": "Sidewalk patio seating with branded planters and umbrellas",
+      "imageUrl": "/assets/architectural-spatial-design/exteriors/outdoor-patio-planters.jpg",
       "category": "exteriors"
     }
   ]

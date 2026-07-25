@@ -1,5 +1,27 @@
 {
-  "signageStandards": [],
+  "signageStandards": [
+    {
+      "id": "sign-1",
+      "name": "Exterior Illuminated Storefront Sign",
+      "description": "Backlit gold channel-letter wordmark and kanji roundels above the entrance",
+      "category": "exterior",
+      "dimensions": {
+        "width": "Not specified",
+        "height": "Not specified"
+      },
+      "material": "Metal channel letters, gold finish",
+      "illumination": "backlit",
+      "placement": "Storefront facade, above main entrance",
+      "usageGuidelines": "Reference photo of installed signage — consult fabricator drawings for exact specifications",
+      "previewUrl": "/assets/menus-signage/signage/environmental/exterior-illuminated-signage.jpg",
+      "files": [
+        {
+          "format": "JPG",
+          "downloadUrl": "/assets/menus-signage/signage/environmental/exterior-illuminated-signage.jpg"
+        }
+      ]
+    }
+  ],
   "wayfinding": [],
   "promotional": []
 }

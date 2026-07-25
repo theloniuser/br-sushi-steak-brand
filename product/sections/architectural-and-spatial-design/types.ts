@@ -11,6 +11,7 @@ export interface ArchitecturalImage {
 export interface ArchitecturalSpatialProps {
   interiors: ArchitecturalImage[]
   exteriors: ArchitecturalImage[]
+  murals: ArchitecturalImage[]
   onViewFullSize?: (imageId: string) => void
   onDownload?: (imageId: string) => void
 }

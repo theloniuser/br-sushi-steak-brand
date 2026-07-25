@@ -7,7 +7,7 @@ export default function ArchitecturalSpatialPreview() {
  const [modalImage, setModalImage] = useState<{ url: string; name: string } | null>(null)
 
  const handleViewFullSize = (imageId: string) => {
- const allImages = [...data.interiors, ...data.exteriors]
+ const allImages = [...data.interiors, ...data.exteriors, ...data.murals]
  const image = allImages.find(img => img.id === imageId)
  if (image) {
  setModalImage({ url: image.imageUrl, name: image.name })
@@ -15,7 +15,7 @@ export default function ArchitecturalSpatialPreview() {
  }
 
  const handleDownload = (imageId: string) => {
- const allImages = [...data.interiors, ...data.exteriors]
+ const allImages = [...data.interiors, ...data.exteriors, ...data.murals]
  const image = allImages.find(img => img.id === imageId)
  if (image) {
  const link = document.createElement('a')
@@ -32,6 +32,7 @@ export default function ArchitecturalSpatialPreview() {
  <ArchitecturalSpatialComponent
  interiors={data.interiors}
  exteriors={data.exteriors}
+ murals={data.murals}
  onViewFullSize={handleViewFullSize}
  onDownload={handleDownload}
  />

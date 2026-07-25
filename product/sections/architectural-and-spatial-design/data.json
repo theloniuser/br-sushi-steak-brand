@@ -78,6 +78,29 @@
       "category": "interiors"
     }
   ],
+  "murals": [
+    {
+      "id": "mur-1",
+      "name": "Peacock & Camellia Panel",
+      "description": "Hand-painted chinoiserie mural panel with peacock and camellia branch",
+      "imageUrl": "/assets/architectural-spatial-design/murals/mural-peacock-camellia-panel.jpg",
+      "category": "murals"
+    },
+    {
+      "id": "mur-2",
+      "name": "Crane & Pheasant Panel",
+      "description": "Hand-painted chinoiserie mural panel with red-crowned crane, pheasant, and camellia branches",
+      "imageUrl": "/assets/architectural-spatial-design/murals/mural-crane-pheasant-camellia-panel.jpg",
+      "category": "murals"
+    },
+    {
+      "id": "mur-3",
+      "name": "Bluebirds & Blossom Panel",
+      "description": "Hand-painted chinoiserie mural panel with bluebirds on a flowering branch",
+      "imageUrl": "/assets/architectural-spatial-design/murals/mural-bluebirds-blossom-panel.jpg",
+      "category": "murals"
+    }
+  ],
   "exteriors": [
     {
       "id": "ext-1",

@@ -3,6 +3,7 @@ import rawData from '@/../product/sections/promotional/data.json'
 import { Promotional as PromotionalComponent } from './components/Promotional'
 import { PdfModal } from '@/components/PdfModal'
 import { ImageModal } from '@/components/ImageModal'
+import { VideoModal } from '@/components/VideoModal'
 import type { MarketingAsset, PromotionalSection } from '@/../product/sections/promotional/types'
 
 const data = rawData as { sections: PromotionalSection[] }
@@ -18,6 +19,7 @@ function findAsset(assetId: string): MarketingAsset | null {
 export default function PromotionalPreview() {
  const [modalPdf, setModalPdf] = useState<{ url: string; name: string } | null>(null)
  const [modalImage, setModalImage] = useState<{ url: string; name: string } | null>(null)
+ const [modalVideo, setModalVideo] = useState<{ url: string; name: string; poster?: string } | null>(null)
 
  const handleAssetDownload = (assetId: string, format: string) => {
  const asset = findAsset(assetId)
@@ -40,6 +42,8 @@ export default function PromotionalPreview() {
 
  if (asset.viewUrl.toLowerCase().endsWith('.pdf')) {
  setModalPdf({ url: asset.viewUrl, name: asset.name })
+ } else if (asset.viewUrl.toLowerCase().endsWith('.mp4')) {
+ setModalVideo({ url: asset.viewUrl, name: asset.name, poster: asset.previewUrl })
  } else {
  setModalImage({ url: asset.viewUrl, name: asset.name })
  }
@@ -63,6 +67,13 @@ export default function PromotionalPreview() {
  imageUrl={modalImage?.url || ''}
  imageName={modalImage?.name || ''}
  onClose={() => setModalImage(null)}
+ />
+ <VideoModal
+ isOpen={!!modalVideo}
+ videoUrl={modalVideo?.url || ''}
+ videoName={modalVideo?.name || ''}
+ posterUrl={modalVideo?.poster}
+ onClose={() => setModalVideo(null)}
  />
  </>
  )

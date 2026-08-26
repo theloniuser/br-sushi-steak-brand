@@ -1,4 +1,4 @@
-import { Download, ZoomIn } from 'lucide-react'
+import { Download, Play, ZoomIn } from 'lucide-react'
 import type { PromotionalProps } from '@/../product/sections/promotional/types'
 import { downloadAsZip } from '@/lib/downloadUtils'
 
@@ -76,6 +76,13 @@ export function Promotional({ sections, onAssetDownload, onAssetView }: Promotio
  loading="lazy"
  className="w-full h-full object-cover"
  />
+ {asset.viewUrl.toLowerCase().endsWith('.mp4') && (
+ <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+ <div className="p-4 bg-black/50 rounded-full">
+ <Play className="w-6 h-6 text-white fill-white" strokeWidth={2} />
+ </div>
+ </div>
+ )}
  {/* Overlay on Hover - Desktop only */}
  <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-3 pointer-events-none">
  <button

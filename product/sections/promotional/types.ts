@@ -1,5 +1,5 @@
 export interface PromoFile {
-  format: 'PNG' | 'JPG' | 'PDF' | 'PSD' | 'AI' | string
+  format: 'PNG' | 'JPG' | 'PDF' | 'PSD' | 'AI' | 'MP4' | string
   size?: string
   downloadUrl: string
 }

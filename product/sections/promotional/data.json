@@ -21,6 +21,17 @@
           "files": [
             { "format": "PDF", "downloadUrl": "/assets/promotional/print-digital-ads/Sushi-Steak_Knicks-Ad_Summer2026.pdf" }
           ]
+        },
+        {
+          "id": "promo-penn1-midstair-screen",
+          "name": "Penn 1 Mid-Stair Screen — Now Open",
+          "description": "Digital signage loop for the Penn 1 mid-stairs screen announcing the new location, no operating hours shown.",
+          "channel": "Digital Signage",
+          "previewUrl": "/assets/promotional/thumbnails/penn1-midstair-screen-poster.jpg",
+          "viewUrl": "/assets/promotional/print-digital-ads/Penn1-MidStairScreen_Open_NoHours.mp4",
+          "files": [
+            { "format": "MP4", "downloadUrl": "/assets/promotional/print-digital-ads/Penn1-MidStairScreen_Open_NoHours.mp4" }
+          ]
         }
       ]
     },
@@ -28,7 +39,30 @@
       "id": "email-campaigns",
       "title": "Email & Digital Campaigns",
       "description": "Email newsletter templates and digital campaign assets.",
-      "assets": []
+      "assets": [
+        {
+          "id": "promo-eblast-grand-opening",
+          "name": "Grand Opening Announcement",
+          "description": "Email announcement introducing Blue Ribbon Sushi & Steak's grand opening at Penn 1, from Chefs Bruce & Eric Bromberg.",
+          "channel": "Email",
+          "previewUrl": "/assets/promotional/email-campaigns/grand-opening-announcement-eblast.jpg",
+          "viewUrl": "/assets/promotional/email-campaigns/grand-opening-announcement-eblast.jpg",
+          "files": [
+            { "format": "JPG", "downloadUrl": "/assets/promotional/email-campaigns/grand-opening-announcement-eblast.jpg" }
+          ]
+        },
+        {
+          "id": "promo-eblast-outdoor-patio",
+          "name": "Al Fresco Dining Eblast",
+          "description": "Email campaign promoting outdoor patio dining and seating hours at Penn 1.",
+          "channel": "Email",
+          "previewUrl": "/assets/promotional/email-campaigns/outdoor-patio-al-fresco-eblast.png",
+          "viewUrl": "/assets/promotional/email-campaigns/outdoor-patio-al-fresco-eblast.png",
+          "files": [
+            { "format": "PNG", "downloadUrl": "/assets/promotional/email-campaigns/outdoor-patio-al-fresco-eblast.png" }
+          ]
+        }
+      ]
     }
   ]
 }

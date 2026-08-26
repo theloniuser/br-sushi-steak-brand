@@ -24,7 +24,7 @@ export function ArchitecturalSpatial({
  Architectural & Spatial Design
  </h1>
  <p className="text-xl font-semibold text-white leading-relaxed drop-shadow-md">
- Interior and exterior photography showcasing [Brand] restaurant design, branding elements, and architectural details.
+ Interior and exterior photography showcasing Blue Ribbon Sushi & Steak restaurant design, branding elements, and architectural details.
  </p>
  </div>
  </div>
@@ -45,7 +45,7 @@ export function ArchitecturalSpatial({
  url: image.imageUrl,
  filename: image.imageUrl.split('/').pop() || `${image.name}.jpg`
  }))
- await downloadAsZip(files, '[Brand]-Architectural-Interiors')
+ await downloadAsZip(files, 'BR-Sushi-Steak-Architectural-Interiors')
  }}
  className="flex items-center gap-2 px-4 py-2.5 bg-brand-action hover:bg-brand-action-hover text-white rounded-lg font-semibold transition-colors whitespace-nowrap"
  >
@@ -54,7 +54,7 @@ export function ArchitecturalSpatial({
  </button>
  </div>
  <p className="text-lg text-zinc-600 max-w-2xl">
- Interior photographs showcasing [Brand] restaurant design, decor, wall treatments, and interior branding elements.
+ Interior photographs showcasing Blue Ribbon Sushi & Steak restaurant design, decor, wall treatments, and interior branding elements.
  </p>
  </div>
 
@@ -126,7 +126,7 @@ export function ArchitecturalSpatial({
  url: image.imageUrl,
  filename: image.imageUrl.split('/').pop() || `${image.name}.jpg`
  }))
- await downloadAsZip(files, '[Brand]-Architectural-Murals')
+ await downloadAsZip(files, 'BR-Sushi-Steak-Architectural-Murals')
  }}
  className="flex items-center gap-2 px-4 py-2.5 bg-brand-action hover:bg-brand-action-hover text-white rounded-lg font-semibold transition-colors whitespace-nowrap"
  >
@@ -135,7 +135,7 @@ export function ArchitecturalSpatial({
  </button>
  </div>
  <p className="text-lg text-zinc-600 max-w-2xl">
- Hand-painted mural panels featured in [Brand] dining rooms and interior spaces.
+ Hand-painted mural panels featured in Blue Ribbon Sushi & Steak dining rooms and interior spaces.
  </p>
  </div>
 
@@ -207,7 +207,7 @@ export function ArchitecturalSpatial({
  url: image.imageUrl,
  filename: image.imageUrl.split('/').pop() || `${image.name}.jpg`
  }))
- await downloadAsZip(files, '[Brand]-Architectural-Exteriors')
+ await downloadAsZip(files, 'BR-Sushi-Steak-Architectural-Exteriors')
  }}
  className="flex items-center gap-2 px-4 py-2.5 bg-brand-action hover:bg-brand-action-hover text-white rounded-lg font-semibold transition-colors whitespace-nowrap"
  >
@@ -216,7 +216,7 @@ export function ArchitecturalSpatial({
  </button>
  </div>
  <p className="text-lg text-zinc-600 max-w-2xl">
- Exterior photographs showing storefront designs, signage, awnings, and building facades for [Brand] locations.
+ Exterior photographs showing storefront designs, signage, awnings, and building facades for Blue Ribbon Sushi & Steak locations.
  </p>
  </div>
 

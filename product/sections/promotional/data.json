@@ -32,6 +32,17 @@
           "files": [
             { "format": "MP4", "downloadUrl": "/assets/promotional/print-digital-ads/Penn1-MidStairScreen_Open_NoHours.mp4" }
           ]
+        },
+        {
+          "id": "promo-penn1-elevator-cab-summer2025",
+          "name": "Penn 1 Elevator Cab — Outdoor Happy Hour",
+          "description": "Elevator cab placement advertisement promoting outdoor happy hour, Summer 2025.",
+          "channel": "Digital Signage",
+          "previewUrl": "/assets/promotional/print-digital-ads/Penn1-ElevatorCab_Summer2025_still.jpg",
+          "viewUrl": "/assets/promotional/print-digital-ads/Penn1-ElevatorCab_Summer2025_still.jpg",
+          "files": [
+            { "format": "JPG", "downloadUrl": "/assets/promotional/print-digital-ads/Penn1-ElevatorCab_Summer2025_still.jpg" }
+          ]
         }
       ]
     },

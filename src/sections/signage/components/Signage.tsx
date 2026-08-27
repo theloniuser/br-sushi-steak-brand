@@ -9,7 +9,6 @@ interface SignageComponentProps extends SignageProps {
 export function Signage({
   signageStandards,
   wayfinding,
-  promotional,
   onSignageDownload,
   onSignageView,
   hideHero
@@ -169,91 +168,6 @@ export function Signage({
                     </h4>
                     <p className="text-sm text-zinc-600">
                       {element.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-        </div>
-
-        {/* Promotional Section */}
-        <div>
-          <div className="mb-16">
-            <div className="flex items-start justify-between mb-4">
-              <h2 className="text-4xl lg:text-5xl font-bold text-zinc-900 tracking-tight">
-                Promotional
-              </h2>
-              <button
-                onClick={async () => {
-                  // Download all promotional signage as zip
-                  const files = promotional.flatMap(promo =>
-                    promo.files.map(file => ({
-                      url: file.downloadUrl,
-                      filename: file.downloadUrl.split('/').pop() || `${promo.name}.${file.format.toLowerCase()}`
-                    }))
-                  )
-                  await downloadAsZip(files, 'BR-Sushi-Steak-Signage-Promotional')
-                }}
-                className="flex items-center gap-2 px-4 py-2.5 bg-brand-action hover:bg-brand-action-hover text-white rounded-lg font-semibold transition-colors whitespace-nowrap"
-              >
-                <Download className="w-4 h-4" />
-                Download All ({promotional.length})
-              </button>
-            </div>
-            <p className="text-xl text-zinc-600 max-w-3xl">
-              Seasonal campaigns, limited-time offers, and event-based promotional signage.
-            </p>
-          </div>
-
-          <section id="promotional">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {promotional.map((promo) => (
-                <div
-                  key={promo.id}
-                  className="bg-white rounded-2xl overflow-hidden shadow-lg shadow-zinc-200/50 border border-zinc-200 hover:shadow-xl hover:shadow-zinc-300/50 transition-all duration-300 group"
-                >
-                  <div
-                    className="relative aspect-[4/3] bg-[#e6e7e8] overflow-hidden cursor-pointer"
-                    onClick={() => onSignageView?.(promo.previewUrl, promo.name)}
-                  >
-                    <img
-                      src={promo.previewUrl || '/assets/ADS-placeholderThm@3x.png'}
-                      onError={(e) => { (e.target as HTMLImageElement).src = '/assets/ADS-placeholderThm@3x.png' }}
-                      alt={promo.name}
-                      loading="lazy"
-                      className="w-full h-full object-cover"
-                    />
-                    {/* Overlay on Hover - Desktop only */}
-                    <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-3 pointer-events-none">
-                      <button
-                        onClick={(e) => {
-                          e.stopPropagation()
-                          onSignageView?.(promo.previewUrl, promo.name)
-                        }}
-                        className="p-3 bg-white/90 hover:bg-white rounded-full transition-colors pointer-events-auto"
-                        title="View Full Size"
-                      >
-                        <ZoomIn className="w-5 h-5 text-zinc-900" strokeWidth={2} />
-                      </button>
-                      <button
-                        onClick={(e) => {
-                          e.stopPropagation()
-                          onSignageDownload?.(promo.id, 'PNG')
-                        }}
-                        className="p-3 bg-brand-action hover:bg-brand-action-hover rounded-full transition-colors pointer-events-auto"
-                        title="Download"
-                      >
-                        <Download className="w-5 h-5 text-white" strokeWidth={2} />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="p-6">
-                    <h4 className="text-lg font-bold text-zinc-900 mb-1">
-                      {promo.name}
-                    </h4>
-                    <p className="text-sm text-zinc-600">
-                      {promo.description}
                     </p>
                   </div>
                 </div>

@@ -55,7 +55,7 @@ export function Signage({
                       filename: file.downloadUrl.split('/').pop() || `${item.name}.${file.format.toLowerCase()}`
                     }))
                   )
-                  await downloadAsZip(files, '[Brand]-Signage-Environmental')
+                  await downloadAsZip(files, 'BR-Sushi-Steak-Signage-Environmental')
                 }}
                 className="flex items-center gap-2 px-4 py-2.5 bg-brand-action hover:bg-brand-action-hover text-white rounded-lg font-semibold transition-colors whitespace-nowrap"
               >
@@ -64,7 +64,7 @@ export function Signage({
               </button>
             </div>
             <p className="text-xl text-zinc-600 max-w-3xl">
-              Interior and exterior signage for [Brand] locations.
+              Interior and exterior signage for Blue Ribbon Sushi & Steak locations.
             </p>
           </div>
 
@@ -193,7 +193,7 @@ export function Signage({
                       filename: file.downloadUrl.split('/').pop() || `${promo.name}.${file.format.toLowerCase()}`
                     }))
                   )
-                  await downloadAsZip(files, '[Brand]-Signage-Promotional')
+                  await downloadAsZip(files, 'BR-Sushi-Steak-Signage-Promotional')
                 }}
                 className="flex items-center gap-2 px-4 py-2.5 bg-brand-action hover:bg-brand-action-hover text-white rounded-lg font-semibold transition-colors whitespace-nowrap"
               >

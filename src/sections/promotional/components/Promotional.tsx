@@ -18,7 +18,7 @@ export function Promotional({ sections, onAssetDownload, onAssetView }: Promotio
  Promotional
  </h1>
  <p className="text-xl font-semibold text-white leading-relaxed drop-shadow-md">
- Marketing materials for social media, print, digital advertising, and email campaigns.
+ Marketing materials for print, digital advertising, and email campaigns.
  </p>
  </div>
  </div>

@@ -28,7 +28,7 @@ export function MainNav({
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#771433] border-b border-white/10">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#630713] border-b border-white/10">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-36">
 
@@ -93,7 +93,7 @@ export function MainNav({
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-white/10 bg-[#771433]">
+        <div className="md:hidden border-t border-white/10 bg-[#630713]">
           <div className="px-4 pt-2 pb-4 space-y-1">
             {navigationItems.map((item) => (
               <button

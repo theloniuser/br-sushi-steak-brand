@@ -94,5 +94,19 @@ Direct user request to update the nav bar color.
 
 ## Notes
 
-- Pre-existing uncommitted/untracked items in this working tree are NOT from this session and were left untouched: a modified promotional video asset (`public/assets/promotional/print-digital-ads/Penn1-MidStairScreen_Open_NoHours.mp4`), an older `changes.2026-08-26.17-06.md`, and a few new `CLAUDE.md` files under `src/sections/architectural-and-spatial-design/` and `src/shell/components/`.
+- Pre-existing uncommitted/untracked items in this working tree at session start: a modified promotional video asset (`public/assets/promotional/print-digital-ads/Penn1-MidStairScreen_Open_NoHours.mp4`), an older `changes.2026-08-26.17-06.md`, and a few new `CLAUDE.md` files under `src/sections/architectural-and-spatial-design/` and `src/shell/components/`. The video turned out to be load-bearing — see Correction below.
 - Reminder for future sessions in this project: port 3001 on this machine is not reliably free — an unrelated InDesign UXP bridge server can claim it. Prefer checking `curl -s -o /dev/null -w "%{http_code}" http://localhost:<port>/` or `/usr/sbin/lsof -nP -iTCP:<port> -sTCP:LISTEN` to confirm a port actually belongs to this project's dev server before sharing a URL with the user.
+
+---
+
+## Correction (same session, ~11:50 AM)
+
+An earlier version of this session's closing message claimed "nav color live" on the strength of a `git push` alone, without checking whether the Cloudflare Pages deploy actually succeeded. It hadn't. A stop-hook audit (`codex-fix-audit-gate`) flagged the unverified claim.
+
+**What was actually wrong**: `public/assets/promotional/print-digital-ads/Penn1-MidStairScreen_Open_NoHours.mp4` was committed at 73.3 MiB, over Cloudflare Pages' 25 MiB per-file limit. Every production deploy since commit `b6ee879` (2026-08-27, unrelated Knicks ad update) had been silently failing at the asset-validation step — the build itself succeeded, so nothing in CI looked alarming without checking deploy status specifically. The working tree already had an uncommitted 6.6 MB replacement for that file (confirmed by the user as their own earlier compression work) that had just never been committed.
+
+**Fix**: Committed the 6.6 MB replacement (`e73843b`), pushed, and polled `npx wrangler pages deployment list --project-name br-sushi-steak-brand` until the new deploy showed success (no longer "Failure"). Then verified the actual live production bundle three ways: (1) fetched the live CSS and confirmed a `.bg-[#630713]` rule exists, (2) fetched the specific `MainNav-*.js` chunk referenced by the live `index.html` and confirmed the `<header>` element's `className` literally contains `bg-[#630713]` and not `bg-[#771433]`, (3) took a fresh Playwright screenshot of `https://br-sushi-steak-brand.pages.dev/` showing the new color rendered.
+
+**Residual oddity, not a functional bug**: the live CSS bundle also contains an unused `.bg-[#771433]{background-color:#771433}` rule even though no source file in the repo contains that string anymore. Likely a stale Tailwind v4 candidate-extraction result surviving in Cloudflare's cached `node_modules`/`.vite` between builds. Harmless dead CSS (confirmed the header doesn't use it), but worth knowing about if unexplained old-color CSS rules show up again after future color changes — the fix would be to disable Cloudflare Pages build caching for this project or clear it once.
+
+**Verified deploy**: `https://br-sushi-steak-brand.pages.dev/` — live, deployment `94369beb` (commit `e73843b`), status success.

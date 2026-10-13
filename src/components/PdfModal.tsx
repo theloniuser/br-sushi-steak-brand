@@ -14,6 +14,7 @@ interface PdfModalProps {
 
 export function PdfModal({ isOpen, pdfUrl, pdfName, onClose }: PdfModalProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
+  const scrollRef = useRef<HTMLDivElement>(null)
   const docRef = useRef<pdfjsLib.PDFDocumentProxy | null>(null)
   const loadingTaskRef = useRef<pdfjsLib.PDFDocumentLoadingTask | null>(null)
   const renderTaskRef = useRef<ReturnType<pdfjsLib.PDFPageProxy['render']> | null>(null)
@@ -41,7 +42,14 @@ export function PdfModal({ isOpen, pdfUrl, pdfName, onClose }: PdfModalProps) {
         if (cancelled) return
         docRef.current = doc
         setNumPages(doc.numPages)
-        setIsLoading(false)
+        // Fit large pages (plans, posters) to the window; never enlarge past the default
+        return doc.getPage(1).then((page) => {
+          if (cancelled) return
+          const available = (scrollRef.current?.clientWidth ?? 0) - 48
+          const naturalWidth = page.getViewport({ scale: 1 }).width
+          if (available > 0 && naturalWidth > 0) setScale(Math.min(1.2, available / naturalWidth))
+          setIsLoading(false)
+        })
       })
       .catch((err) => {
         if (cancelled) return
@@ -151,7 +159,7 @@ export function PdfModal({ isOpen, pdfUrl, pdfName, onClose }: PdfModalProps) {
             </>
           )}
           <button
-            onClick={() => setScale((s) => Math.max(s - 0.2, 0.4))}
+            onClick={() => setScale((s) => Math.max(s - 0.2, 0.1))}
             className="p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors"
             aria-label="Zoom out"
           >
@@ -184,6 +192,7 @@ export function PdfModal({ isOpen, pdfUrl, pdfName, onClose }: PdfModalProps) {
 
       {/* Page canvas */}
       <div
+        ref={scrollRef}
         className="relative flex-1 overflow-auto flex items-start justify-center p-6"
         onClick={(e) => e.stopPropagation()}
       >

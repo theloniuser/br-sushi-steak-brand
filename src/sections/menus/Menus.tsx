@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import data from '@/../product/sections/menus/data.json'
 import { Menus as MenusComponent } from './components/Menus'
+import { ImageModal } from '@/components/ImageModal'
 import { PdfModal } from '@/components/PdfModal'
 
 export default function MenusPreview() {
+ const [modalImage, setModalImage] = useState<{ url: string; name: string } | null>(null)
  const [modalPdf, setModalPdf] = useState<{ url: string; name: string } | null>(null)
 
  const handleMenuDownload = (menuId: string, format: string) => {
@@ -35,9 +37,15 @@ export default function MenusPreview() {
      if (menu) break
    }
 
-   if (!menu || !menu.viewUrl) return
+   if (!menu) return
 
-   setModalPdf({ url: menu.viewUrl, name: menu.name })
+   // Prefer the PDF (multi-page viewer); fall back to the preview image
+   const pdf = menu.files.find(f => f.format.toUpperCase() === 'PDF')
+   if (pdf) {
+     setModalPdf({ url: pdf.downloadUrl, name: menu.name })
+   } else if (menu.viewUrl) {
+     setModalImage({ url: menu.viewUrl, name: menu.name })
+   }
  }
 
  return (
@@ -46,6 +54,12 @@ export default function MenusPreview() {
  sections={data.sections}
  onMenuDownload={handleMenuDownload}
  onMenuView={handleMenuView}
+ />
+ <ImageModal
+ isOpen={!!modalImage}
+ imageUrl={modalImage?.url || ''}
+ imageName={modalImage?.name || ''}
+ onClose={() => setModalImage(null)}
  />
  <PdfModal
  isOpen={!!modalPdf}

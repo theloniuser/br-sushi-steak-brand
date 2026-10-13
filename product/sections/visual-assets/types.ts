@@ -35,4 +35,5 @@ export interface VisualAssetsProps {
   icons: IconAsset[]
   decorativeElements: DecorativeElement[]
   onAssetDownload?: (assetId: string, format: string) => void
+  onViewFullSize?: (imageUrl: string, imageName: string) => void
 }

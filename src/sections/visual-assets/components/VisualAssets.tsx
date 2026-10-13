@@ -1,4 +1,4 @@
-import { Download } from 'lucide-react'
+import { Download, ZoomIn } from 'lucide-react'
 import type { VisualAssetsProps } from '@/../product/sections/visual-assets/types'
 import { downloadAsZip } from '@/lib/downloadUtils'
 
@@ -6,7 +6,8 @@ export function VisualAssets({
  graphics,
  icons,
  decorativeElements,
- onAssetDownload
+ onAssetDownload,
+ onViewFullSize
 }: VisualAssetsProps) {
  return (
  <div className="min-h-screen bg-slate-50">
@@ -62,9 +63,12 @@ export function VisualAssets({
  {graphics.map((graphic) => (
  <div
  key={graphic.id}
- className="bg-white rounded-2xl overflow-hidden shadow-lg shadow-zinc-200/50 border border-zinc-200 hover:shadow-xl hover:shadow-zinc-300/50:shadow-black/70 transition-all duration-300"
+ className="bg-white rounded-2xl overflow-hidden shadow-lg shadow-zinc-200/50 border border-zinc-200 hover:shadow-xl hover:shadow-zinc-300/50:shadow-black/70 transition-all duration-300 group"
  >
- <div className="aspect-[4/3] bg-[#e6e7e8] flex items-center justify-center p-6 border-b border-zinc-200 overflow-hidden">
+ <div
+ className="relative aspect-[4/3] bg-[#e6e7e8] flex items-center justify-center p-6 border-b border-zinc-200 overflow-hidden cursor-pointer"
+ onClick={() => onViewFullSize?.(graphic.previewUrl, graphic.name)}
+ >
  <img
  src={graphic.previewUrl || '/assets/ADS-placeholderThm@3x.png'}
  onError={(e) => { (e.target as HTMLImageElement).src = '/assets/ADS-placeholderThm@3x.png' }}
@@ -72,6 +76,19 @@ export function VisualAssets({
  loading="lazy"
  className="w-full h-full object-contain"
  />
+ {/* Overlay on Hover - Desktop only */}
+ <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
+ <button
+ onClick={(e) => {
+ e.stopPropagation()
+ onViewFullSize?.(graphic.previewUrl, graphic.name)
+ }}
+ className="p-2.5 bg-white/90 hover:bg-white rounded-full transition-colors pointer-events-auto"
+ title="View Full Size"
+ >
+ <ZoomIn className="w-4 h-4 text-zinc-900" strokeWidth={2} />
+ </button>
+ </div>
  </div>
  <div className="p-5 space-y-3">
  <div>
@@ -208,9 +225,12 @@ export function VisualAssets({
  {decorativeElements.map((element) => (
  <div
  key={element.id}
- className="bg-white rounded-2xl overflow-hidden shadow-lg shadow-zinc-200/50 border border-zinc-200 hover:shadow-xl hover:shadow-zinc-300/50:shadow-black/70 transition-all duration-300"
+ className="bg-white rounded-2xl overflow-hidden shadow-lg shadow-zinc-200/50 border border-zinc-200 hover:shadow-xl hover:shadow-zinc-300/50:shadow-black/70 transition-all duration-300 group"
  >
- <div className="aspect-[4/3] bg-[#e6e7e8] flex items-center justify-center p-8 border-b border-zinc-200 overflow-hidden">
+ <div
+ className="relative aspect-[4/3] bg-[#e6e7e8] flex items-center justify-center p-8 border-b border-zinc-200 overflow-hidden cursor-pointer"
+ onClick={() => onViewFullSize?.(element.previewUrl, element.name)}
+ >
  <img
  src={element.previewUrl || '/assets/ADS-placeholderThm@3x.png'}
               onError={(e) => { (e.target as HTMLImageElement).src = '/assets/ADS-placeholderThm@3x.png' }}
@@ -218,6 +238,19 @@ export function VisualAssets({
  loading="lazy"
  className="max-w-full max-h-full object-contain"
  />
+ {/* Overlay on Hover - Desktop only */}
+ <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
+ <button
+ onClick={(e) => {
+ e.stopPropagation()
+ onViewFullSize?.(element.previewUrl, element.name)
+ }}
+ className="p-2.5 bg-white/90 hover:bg-white rounded-full transition-colors pointer-events-auto"
+ title="View Full Size"
+ >
+ <ZoomIn className="w-4 h-4 text-zinc-900" strokeWidth={2} />
+ </button>
+ </div>
  </div>
  <div className="p-6 space-y-4">
  <div>
